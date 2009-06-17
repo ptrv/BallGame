@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E900486CD37000505A6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20286C2BFDCF999611CA2CEA /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		D05761A20FE8514100E83EB4 /* PVNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05761A10FE8514100E83EB4 /* PVNode.cpp */; };
+		D05761AC0FE8518F00E83EB4 /* PVPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */; };
+		D05764260FE851C800E83EB4 /* PVBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05764250FE851C800E83EB4 /* PVBall.cpp */; };
+		D0672B1A0FA7C5D40085D243 /* Cg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B180FA7C5D40085D243 /* Cg.framework */; };
+		D0672B1B0FA7C5D40085D243 /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B190FA7C5D40085D243 /* Ogre.framework */; };
+		D0672B210FA7C5F40085D243 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B200FA7C5F40085D243 /* IOKit.framework */; };
+		D0672B230FA7C62E0085D243 /* libois.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B220FA7C62E0085D243 /* libois.a */; };
+		D0672B280FA7C68E0085D243 /* plugins.cfg in Resources */ = {isa = PBXBuildFile; fileRef = D0672B250FA7C68E0085D243 /* plugins.cfg */; };
+		D0672B290FA7C68E0085D243 /* resources.cfg in Resources */ = {isa = PBXBuildFile; fileRef = D0672B260FA7C68E0085D243 /* resources.cfg */; };
+		D0672C3F0FA7C8D90085D243 /* libois.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0672B220FA7C62E0085D243 /* libois.a */; };
+		D0672C400FA7C8D90085D243 /* Cg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0672B180FA7C5D40085D243 /* Cg.framework */; };
+		D0672C410FA7C8D90085D243 /* Ogre.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0672B190FA7C5D40085D243 /* Ogre.framework */; };
+		D0672CCC0FA7D0350085D243 /* media.cfg in Resources */ = {isa = PBXBuildFile; fileRef = D0672CCB0FA7D0350085D243 /* media.cfg */; };
+		D0672E830FA7D0550085D243 /* Media in Resources */ = {isa = PBXBuildFile; fileRef = D0672CCD0FA7D0540085D243 /* Media */; };
+		D08A26610FCC89200070AADD /* PVTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0A172400FCC68770027501B /* PVTimer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0672B430FA7C8A60085D243 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0672C3F0FA7C8D90085D243 /* libois.a in CopyFiles */,
+				D0672C400FA7C8D90085D243 /* Cg.framework in CopyFiles */,
+				D0672C410FA7C8D90085D243 /* Ogre.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20286C2BFDCF999611CA2CEA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* BallGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05761A00FE8514100E83EB4 /* PVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVNode.h; sourceTree = "<group>"; };
+		D05761A10FE8514100E83EB4 /* PVNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVNode.cpp; sourceTree = "<group>"; };
+		D05761AA0FE8518F00E83EB4 /* PVPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPhysics.h; sourceTree = "<group>"; };
+		D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVPhysics.cpp; sourceTree = "<group>"; };
+		D05764240FE851C800E83EB4 /* PVBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVBall.h; sourceTree = "<group>"; };
+		D05764250FE851C800E83EB4 /* PVBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVBall.cpp; sourceTree = "<group>"; };
+		D0672B180FA7C5D40085D243 /* Cg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cg.framework; path = ../../../../../development/MyLib/OgreSDK/Dependencies/Cg.framework; sourceTree = SOURCE_ROOT; };
+		D0672B190FA7C5D40085D243 /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogre.framework; path = ../../../../../development/MyLib/OgreSDK/Dependencies/Ogre.framework; sourceTree = SOURCE_ROOT; };
+		D0672B200FA7C5F40085D243 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		D0672B220FA7C62E0085D243 /* libois.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libois.a; path = ../../../../../development/MyLib/OgreSDK/Dependencies/lib/Release/libois.a; sourceTree = SOURCE_ROOT; };
+		D0672B250FA7C68E0085D243 /* plugins.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugins.cfg; sourceTree = "<group>"; };
+		D0672B260FA7C68E0085D243 /* resources.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = resources.cfg; sourceTree = "<group>"; };
+		D0672CCB0FA7D0350085D243 /* media.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = media.cfg; sourceTree = "<group>"; };
+		D0672CCD0FA7D0540085D243 /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Media; sourceTree = "<group>"; };
+		D06822F10FDFD868005BE34A /* BallApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallApp.h; sourceTree = "<group>"; };
+		D0A1723F0FCC68770027501B /* PVTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTimer.h; sourceTree = "<group>"; };
+		D0A172400FCC68770027501B /* PVTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVTimer.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				D0672B1A0FA7C5D40085D243 /* Cg.framework in Frameworks */,
+				D0672B1B0FA7C5D40085D243 /* Ogre.framework in Frameworks */,
+				D0672B210FA7C5F40085D243 /* IOKit.framework in Frameworks */,
+				D0672B230FA7C62E0085D243 /* libois.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* BallGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* OgreEmpty */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = OgreEmpty;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2BFDCF999611CA2CEA /* main.cpp */,
+				D0A1723F0FCC68770027501B /* PVTimer.h */,
+				D0A172400FCC68770027501B /* PVTimer.cpp */,
+				D06822F10FDFD868005BE34A /* BallApp.h */,
+				D05761A00FE8514100E83EB4 /* PVNode.h */,
+				D05761A10FE8514100E83EB4 /* PVNode.cpp */,
+				D05761AA0FE8518F00E83EB4 /* PVPhysics.h */,
+				D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */,
+				D05764240FE851C800E83EB4 /* PVBall.h */,
+				D05764250FE851C800E83EB4 /* PVBall.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0672CCD0FA7D0540085D243 /* Media */,
+				D0672CCB0FA7D0350085D243 /* media.cfg */,
+				D0672B250FA7C68E0085D243 /* plugins.cfg */,
+				D0672B260FA7C68E0085D243 /* resources.cfg */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D0672B220FA7C62E0085D243 /* libois.a */,
+				D0672B200FA7C5F40085D243 /* IOKit.framework */,
+				D0672B180FA7C5D40085D243 /* Cg.framework */,
+				D0672B190FA7C5D40085D243 /* Ogre.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* BallGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "BallGame" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+				D0672B430FA7C8A60085D243 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallGame;
+			productInstallPath = "$(HOME)/Applications";
+			productName = OgreEmpty;
+			productReference = 8D0C4E970486CD37000505A6 /* BallGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "BallGame" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 20286C29FDCF999611CA2CEA /* OgreEmpty */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* BallGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				D0672B280FA7C68E0085D243 /* plugins.cfg in Resources */,
+				D0672B290FA7C68E0085D243 /* resources.cfg in Resources */,
+				D0672CCC0FA7D0350085D243 /* media.cfg in Resources */,
+				D0672E830FA7D0550085D243 /* Media in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08A26610FCC89200070AADD /* PVTimer.cpp in Sources */,
+				8D0C4E900486CD37000505A6 /* main.cpp in Sources */,
+				D05761A20FE8514100E83EB4 /* PVNode.cpp in Sources */,
+				D05761AC0FE8518F00E83EB4 /* PVPhysics.cpp in Sources */,
+				D05764260FE851C800E83EB4 /* PVBall.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/include\"",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/Ogre.framework/Versions/A/Headers\"",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Samples/include\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/lib/Release\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BallGame;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/include\"",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/Ogre.framework/Versions/A/Headers\"",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/CEGUI.framework/Versions/A/Headers\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/lib/Release\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = BallGame;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

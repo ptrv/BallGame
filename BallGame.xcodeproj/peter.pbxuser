@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	0867D6ABFE840B52C02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {877, 750}}";
+			sepNavSelRange = "{45, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	20286C28FDCF999611CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = D0672B130FA7C1A70085D243 /* BallGame */;
+		activeTarget = 8D0C4E890486CD37000505A6 /* BallGame */;
+		addToTargets = (
+			8D0C4E890486CD37000505A6 /* BallGame */,
+		);
+		breakpoints = (
+			D0CFBA100FD6C54D00BADAE2 /* PVPhysics.cpp:5 */,
+		);
+		codeSenseManager = D0672B170FA7C1C60085D243 /* Code sense */;
+		executables = (
+			D0672B130FA7C1A70085D243 /* BallGame */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					587,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					663,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					677,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					623,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 266893466;
+			PBXWorkspaceStateSaveDate = 266893466;
+		};
+		perUserProjectItems = {
+			D03F07270FB193C80027E5B5 = D03F07270FB193C80027E5B5 /* PBXTextBookmark */;
+			D03F072B0FB194520027E5B5 = D03F072B0FB194520027E5B5 /* PlistBookmark */;
+			D05761A70FE8516600E83EB4 = D05761A70FE8516600E83EB4 /* PBXTextBookmark */;
+			D05764210FE851B200E83EB4 = D05764210FE851B200E83EB4 /* PBXTextBookmark */;
+			D05764400FE852DD00E83EB4 = D05764400FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764410FE852DD00E83EB4 = D05764410FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764420FE852DD00E83EB4 = D05764420FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764430FE852DD00E83EB4 = D05764430FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764450FE852DD00E83EB4 = D05764450FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764470FE852DD00E83EB4 = D05764470FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764480FE852DD00E83EB4 = D05764480FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764490FE852DD00E83EB4 = D05764490FE852DD00E83EB4 /* PBXTextBookmark */;
+			D05764650FE8531300E83EB4 = D05764650FE8531300E83EB4 /* PBXTextBookmark */;
+			D05769430FE8782800E83EB4 = D05769430FE8782800E83EB4 /* PBXTextBookmark */;
+			D05769590FE8788C00E83EB4 = D05769590FE8788C00E83EB4 /* PBXTextBookmark */;
+			D05769630FE8789D00E83EB4 /* PBXTextBookmark */ = D05769630FE8789D00E83EB4 /* PBXTextBookmark */;
+			D0672B320FA7C78B0085D243 = D0672B320FA7C78B0085D243 /* PBXTextBookmark */;
+			D0672B330FA7C78B0085D243 = D0672B330FA7C78B0085D243 /* PBXTextBookmark */;
+			D0672E900FA7D0970085D243 = D0672E900FA7D0970085D243 /* PBXTextBookmark */;
+			D068217B0FDEF212005BE34A = D068217B0FDEF212005BE34A /* PBXTextBookmark */;
+			D068217D0FDEF212005BE34A = D068217D0FDEF212005BE34A /* PBXTextBookmark */;
+			D06821880FDEF255005BE34A = D06821880FDEF255005BE34A /* PBXTextBookmark */;
+			D06821890FDEF255005BE34A = D06821890FDEF255005BE34A /* PBXTextBookmark */;
+			D06821D80FDEF3ED005BE34A = D06821D80FDEF3ED005BE34A /* PBXTextBookmark */;
+			D06821E00FDEF402005BE34A = D06821E00FDEF402005BE34A /* PBXTextBookmark */;
+			D06822F90FDFD903005BE34A = D06822F90FDFD903005BE34A /* PBXTextBookmark */;
+			D06823210FDFDC52005BE34A = D06823210FDFDC52005BE34A /* PBXTextBookmark */;
+			D08A22F30FCC741B0070AADD = D08A22F30FCC741B0070AADD /* PBXTextBookmark */;
+			D08A22F40FCC741B0070AADD = D08A22F40FCC741B0070AADD /* PBXTextBookmark */;
+			D08A22F50FCC741B0070AADD = D08A22F50FCC741B0070AADD /* PBXTextBookmark */;
+			D08A272A0FCD80BE0070AADD = D08A272A0FCD80BE0070AADD /* PBXTextBookmark */;
+			D08A272E0FCD80BE0070AADD = D08A272E0FCD80BE0070AADD /* PBXTextBookmark */;
+			D08A27930FCD87CC0070AADD = D08A27930FCD87CC0070AADD /* PBXTextBookmark */;
+			D08A27A30FCD88CE0070AADD = D08A27A30FCD88CE0070AADD /* PBXTextBookmark */;
+			D0D33C150FAE74C700ED20CB = D0D33C150FAE74C700ED20CB /* PlistBookmark */;
+			D0D33EE30FAEFE2500ED20CB = D0D33EE30FAEFE2500ED20CB /* PBXTextBookmark */;
+		};
+		sourceControlManager = D0672B160FA7C1C60085D243 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	20286C2BFDCF999611CA2CEA /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 4365}}";
+			sepNavSelRange = "{3715, 0}";
+			sepNavVisRange = "{124, 933}";
+			sepNavWindowFrame = "{{38, 110}, {1405, 892}}";
+		};
+	};
+	8D0C4E890486CD37000505A6 /* BallGame */ = {
+		activeExec = 0;
+		executables = (
+			D0672B130FA7C1A70085D243 /* BallGame */,
+		);
+	};
+	D03F07270FB193C80027E5B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0867D6ABFE840B52C02AAC07 /* English */;
+		name = "InfoPlist.strings: 3";
+		rLen = 0;
+		rLoc = 45;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	D03F072B0FB194520027E5B5 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D0C4E960486CD37000505A6 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/OgreEmpty/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D03F0B1F0FB1C42A0027E5B5 /* ExampleApplication.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = ExampleApplication.h;
+		path = /Users/peter/Documents/development/MyLib/OgreSDK/Samples/include/ExampleApplication.h;
+		sourceTree = "<absolute>";
+	};
+	D05761A00FE8514100E83EB4 /* PVNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 750}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1020}";
+		};
+	};
+	D05761A10FE8514100E83EB4 /* PVNode.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 750}}";
+			sepNavSelRange = "{182, 0}";
+			sepNavVisRange = "{0, 738}";
+		};
+	};
+	D05761A70FE8516600E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05761A00FE8514100E83EB4 /* PVNode.h */;
+		name = "PVNode.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1020;
+		vrLoc = 0;
+	};
+	D05761AA0FE8518F00E83EB4 /* PVPhysics.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 390}}";
+			sepNavSelRange = "{348, 0}";
+			sepNavVisRange = "{157, 368}";
+		};
+	};
+	D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 727}}";
+			sepNavSelRange = "{301, 0}";
+			sepNavVisRange = "{0, 892}";
+		};
+	};
+	D05764210FE851B200E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05761AA0FE8518F00E83EB4 /* PVPhysics.h */;
+		name = "PVPhysics.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 494;
+		vrLoc = 0;
+	};
+	D05764240FE851C800E83EB4 /* PVBall.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 750}}";
+			sepNavSelRange = "{489, 0}";
+			sepNavVisRange = "{0, 489}";
+		};
+	};
+	D05764250FE851C800E83EB4 /* PVBall.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 435}}";
+			sepNavSelRange = "{182, 0}";
+			sepNavVisRange = "{0, 404}";
+		};
+	};
+	D05764400FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05764240FE851C800E83EB4 /* PVBall.h */;
+		name = "PVBall.h: 22";
+		rLen = 0;
+		rLoc = 489;
+		rType = 0;
+		vrLen = 489;
+		vrLoc = 0;
+	};
+	D05764410FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05764250FE851C800E83EB4 /* PVBall.cpp */;
+		name = "PVBall.cpp: 5";
+		rLen = 0;
+		rLoc = 183;
+		rType = 0;
+		vrLen = 474;
+		vrLoc = 0;
+	};
+	D05764420FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0A1723F0FCC68770027501B /* PVTimer.h */;
+		name = "PVTimer.h: 34";
+		rLen = 0;
+		rLoc = 642;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 0;
+	};
+	D05764430FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0A172400FCC68770027501B /* PVTimer.cpp */;
+		name = "PVTimer.cpp: 42";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 0;
+	};
+	D05764450FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D06822F10FDFD868005BE34A /* BallApp.h */;
+		name = "BallApp.h: 15";
+		rLen = 0;
+		rLoc = 359;
+		rType = 0;
+		vrLen = 1649;
+		vrLoc = 0;
+	};
+	D05764470FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05761A00FE8514100E83EB4 /* PVNode.h */;
+		name = "PVNode.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1020;
+		vrLoc = 0;
+	};
+	D05764480FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05761A10FE8514100E83EB4 /* PVNode.cpp */;
+		name = "PVNode.cpp: 4";
+		rLen = 0;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 0;
+	};
+	D05764490FE852DD00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05761AA0FE8518F00E83EB4 /* PVPhysics.h */;
+		name = "PVPhysics.h: 26";
+		rLen = 0;
+		rLoc = 528;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 0;
+	};
+	D05764650FE8531300E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */;
+		name = "PVPhysics.cpp: 14";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 892;
+		vrLoc = 0;
+	};
+	D05769430FE8782800E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.cpp */;
+		name = "main.cpp: 136";
+		rLen = 0;
+		rLoc = 3715;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 124;
+	};
+	D05769590FE8788C00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.cpp */;
+		name = "main.cpp: 136";
+		rLen = 0;
+		rLoc = 3715;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 124;
+	};
+	D05769630FE8789D00E83EB4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.cpp */;
+		name = "main.cpp: 136";
+		rLen = 0;
+		rLoc = 3715;
+		rType = 0;
+		vrLen = 933;
+		vrLoc = 124;
+	};
+	D0672B130FA7C1A70085D243 /* BallGame */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = BallGame;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	D0672B160FA7C1C60085D243 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	D0672B170FA7C1C60085D243 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	D0672B250FA7C68E0085D243 /* plugins.cfg */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 616}}";
+			sepNavSelRange = "{427, 0}";
+			sepNavVisRange = "{0, 428}";
+		};
+	};
+	D0672B260FA7C68E0085D243 /* resources.cfg */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 616}}";
+			sepNavSelRange = "{166, 0}";
+			sepNavVisRange = "{0, 1021}";
+		};
+	};
+	D0672B320FA7C78B0085D243 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0672B260FA7C68E0085D243 /* resources.cfg */;
+		name = "resources.cfg: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 0;
+	};
+	D0672B330FA7C78B0085D243 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0672B250FA7C68E0085D243 /* plugins.cfg */;
+		name = "plugins.cfg: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 428;
+		vrLoc = 0;
+	};
+	D0672CCB0FA7D0350085D243 /* media.cfg */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 616}}";
+			sepNavSelRange = "{223, 0}";
+			sepNavVisRange = "{0, 398}";
+		};
+	};
+	D0672E900FA7D0970085D243 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0672CCB0FA7D0350085D243 /* media.cfg */;
+		name = "media.cfg: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 381;
+		vrLoc = 0;
+	};
+	D06821720FDEF212005BE34A /* PVPhysicsNode.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = PVPhysicsNode.h;
+		path = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/BallSchuss_win/BallSchuss/src/PVPhysicsNode.h;
+		sourceTree = "<absolute>";
+	};
+	D06821740FDEF212005BE34A /* PVPhysicsNode.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = PVPhysicsNode.cpp;
+		path = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/BallSchuss_win/BallSchuss/src/PVPhysicsNode.cpp;
+		sourceTree = "<absolute>";
+	};
+	D068217B0FDEF212005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D068217C0FDEF212005BE34A /* PVPhysicsNode.h */;
+		name = "PVPhysicsNode.h: 11";
+		rLen = 408;
+		rLoc = 288;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 0;
+	};
+	D068217C0FDEF212005BE34A /* PVPhysicsNode.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = PVPhysicsNode.h;
+		path = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/BallSchuss_win/BallSchuss/src/PVPhysicsNode.h;
+		sourceTree = "<absolute>";
+	};
+	D068217D0FDEF212005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D068217E0FDEF212005BE34A /* PVPhysicsNode.cpp */;
+		name = "PVPhysicsNode.cpp: 29";
+		rLen = 0;
+		rLoc = 596;
+		rType = 0;
+		vrLen = 955;
+		vrLoc = 0;
+	};
+	D068217E0FDEF212005BE34A /* PVPhysicsNode.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = PVPhysicsNode.cpp;
+		path = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/BallSchuss_win/BallSchuss/src/PVPhysicsNode.cpp;
+		sourceTree = "<absolute>";
+	};
+	D06821880FDEF255005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D06821740FDEF212005BE34A /* PVPhysicsNode.cpp */;
+		name = "PVPhysicsNode.cpp: 9";
+		rLen = 740;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 955;
+		vrLoc = 0;
+	};
+	D06821890FDEF255005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D06821720FDEF212005BE34A /* PVPhysicsNode.h */;
+		name = "PVPhysicsNode.h: 10";
+		rLen = 0;
+		rLoc = 287;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 0;
+	};
+	D06821C50FDEF34F005BE34A /* Main.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = Main.cpp;
+		path = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/BallSchuss_win/BallSchuss/src/Main.cpp;
+		sourceTree = "<absolute>";
+	};
+	D06821D80FDEF3ED005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D06821C50FDEF34F005BE34A /* Main.cpp */;
+		name = "Main.cpp: 79";
+		rLen = 198;
+		rLoc = 1979;
+		rType = 0;
+		vrLen = 1310;
+		vrLoc = 1317;
+	};
+	D06821E00FDEF402005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.cpp */;
+		name = "main.cpp: 72";
+		rLen = 0;
+		rLoc = 7826;
+		rType = 0;
+		vrLen = 1213;
+		vrLoc = 1036;
+	};
+	D06822F10FDFD868005BE34A /* BallApp.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 1290}}";
+			sepNavSelRange = "{359, 0}";
+			sepNavVisRange = "{0, 1649}";
+			sepNavWindowFrame = "{{15, 4}, {1405, 874}}";
+		};
+	};
+	D06822F90FDFD903005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D06822F10FDFD868005BE34A /* BallApp.h */;
+		name = "BallApp.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 157;
+		vrLoc = 0;
+	};
+	D06823210FDFDC52005BE34A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D03F0B1F0FB1C42A0027E5B5 /* ExampleApplication.h */;
+		name = "ExampleApplication.h: 60";
+		rLen = 25;
+		rLoc = 1837;
+		rType = 0;
+		vrLen = 1558;
+		vrLoc = 884;
+	};
+	D08A22F30FCC741B0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0672B260FA7C68E0085D243 /* resources.cfg */;
+		name = "resources.cfg: 4";
+		rLen = 0;
+		rLoc = 166;
+		rType = 0;
+		vrLen = 1021;
+		vrLoc = 0;
+	};
+	D08A22F40FCC741B0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0672B250FA7C68E0085D243 /* plugins.cfg */;
+		name = "plugins.cfg: 13";
+		rLen = 0;
+		rLoc = 427;
+		rType = 0;
+		vrLen = 428;
+		vrLoc = 0;
+	};
+	D08A22F50FCC741B0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0672CCB0FA7D0350085D243 /* media.cfg */;
+		name = "media.cfg: 11";
+		rLen = 0;
+		rLoc = 223;
+		rType = 0;
+		vrLen = 398;
+		vrLoc = 0;
+	};
+	D08A272A0FCD80BE0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D08A272B0FCD80BE0070AADD /* OgreSceneNode.h */;
+		name = "OgreSceneNode.h: 107";
+		rLen = 0;
+		rLoc = 3805;
+		rType = 0;
+		vrLen = 2093;
+		vrLoc = 3644;
+	};
+	D08A272B0FCD80BE0070AADD /* OgreSceneNode.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = OgreSceneNode.h;
+		path = /Users/peter/Documents/development/MyLib/OgreSDK/Dependencies/Ogre.framework/Versions/A/Headers/OgreSceneNode.h;
+		sourceTree = "<absolute>";
+	};
+	D08A272E0FCD80BE0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D03F0B1F0FB1C42A0027E5B5 /* ExampleApplication.h */;
+		name = "ExampleApplication.h: 79";
+		rLen = 0;
+		rLoc = 2447;
+		rType = 0;
+		vrLen = 1490;
+		vrLoc = 3279;
+	};
+	D08A27750FCD86BF0070AADD /* PVPhysics.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = PVPhysics.cpp;
+		path = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/OgreEmpty/PVPhysics.cpp;
+		sourceTree = "<absolute>";
+	};
+	D08A27930FCD87CC0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0A1723F0FCC68770027501B /* PVTimer.h */;
+		name = "MyTimer.h: 16";
+		rLen = 0;
+		rLoc = 313;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 0;
+	};
+	D08A27A30FCD88CE0070AADD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D0A172400FCC68770027501B /* PVTimer.cpp */;
+		name = "MyTimer.cpp: 29";
+		rLen = 0;
+		rLoc = 569;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 0;
+	};
+	D0A1723F0FCC68770027501B /* PVTimer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 750}}";
+			sepNavSelRange = "{642, 0}";
+			sepNavVisRange = "{0, 665}";
+		};
+	};
+	D0A172400FCC68770027501B /* PVTimer.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {841, 750}}";
+			sepNavSelRange = "{859, 0}";
+			sepNavVisRange = "{0, 896}";
+		};
+	};
+	D0CFBA100FD6C54D00BADAE2 /* PVPhysics.cpp:5 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = D08A27750FCD86BF0070AADD /* PVPhysics.cpp */;
+		functionName = "PhysicsNode::move()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 5;
+		location = OgreEmpty;
+		modificationTime = 266883818.27924;
+		state = 1;
+	};
+	D0D33C150FAE74C700ED20CB /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D0C4E960486CD37000505A6 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/peter/Documents/FHTW/semester7/GamePhysics/Exercises/OgreEmpty/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D0D33EE30FAEFE2500ED20CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0867D6ABFE840B52C02AAC07 /* English */;
+		name = "InfoPlist.strings: 3";
+		rLen = 0;
+		rLoc = 45;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+}
