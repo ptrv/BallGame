@@ -12,15 +12,19 @@
 using namespace Ogre;
 class PVPhysics
 	{
+		const static Vector3 GRAVITY;
+		const static float DAMPING;
+		
 	public:
 		PVPhysics();
 		~PVPhysics();
 		
 		void setDtime(float t) { m_dtime = t; };
 		
-		void move(std::vector<PVBall*>& balls);
+		void simulate(std::vector<PVBall*>& balls, double timeMs);
+		void move(PVBall* ball, double timeMs);
 		
 	private:
 		float m_dtime;
-		Vector3 m_g;
+		//Vector3 m_g;
 	};

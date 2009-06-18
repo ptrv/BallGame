@@ -6,40 +6,39 @@
 #include "PVPhysics.h"
 #include "PVTimer.h"
 
+const Vector3 PVPhysics::GRAVITY = Vector3(0, -9.81, 0);
+const float PVPhysics::DAMPING = 0.85;
+
 PVPhysics::PVPhysics() :
 m_dtime(0.0f)
 {
-	m_g = Vector3(0, -9.81, 0);
 }
 
 PVPhysics::~PVPhysics()
 {
 }
 
-void PVPhysics::move(std::vector<PVBall*>& balls)
+void PVPhysics::simulate(std::vector<PVBall*>& balls, double timeMs)
 {
-//	//int v = 1;
-//	
-//	//speed += 2 * dtime;
-//	//	m_node = mSceneMgr->getSceneNode("SphereNode");
-//	//Vector3 position = sphereNode->getPosition();
-//	m_pos = m_node->getPosition();
-//	//Vector3 v = Vector3(0,0,0);
-//	Vector3 a;
-//	float t = m_dtime;
-//	if (PVTimer::getInstance().messureTime())
-//	{
-//		
-//		if (t < 0.09) a = m_a;
-//		else a = m_g;
-//		//first = false;
-//		
-//		m_v += a * t;
-//		m_pos += m_v*t+((a*t*t)/2);
-//		
-//		m_dtime += 0.03;
-//	}
-//	
-//	m_node->setPosition(m_pos);// * 0.99);
+	m_dtime = timeMs;
 	
+	for(unsigned int i = 0; i < balls.size(); ++i)
+	{
+		move(balls.at(i), m_dtime);
+		std::cout << "test" << std::endl;
+	}
+}
+
+void PVPhysics::move(PVBall* ball, double timeMs)
+{
+	Vector3 position = ball->getPosition();
+	Vector3 velocity = ball->getVelocity();
+	Vector3 acceleration = ball->getAcceleration();
+	
+	velocity += (acceleration * timeMs);
+	
+	position += ((velocity * timeMs) + (acceleration * (timeMs * timeMs) / 2));
+	
+	ball->setVelocity(velocity);
+	ball->setPosition(position);
 }

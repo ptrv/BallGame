@@ -1,6 +1,8 @@
 /*==========================================================
  Copyright (c) Peter Vasil, 2008
  ==========================================================*/
+#ifndef _PVBALL_H_
+#define _PVBALL_H_
 
 #include "PVNode.h"
 
@@ -20,3 +22,5 @@ class PVBall : public PVNode
 		int m_ballId;
 		
 	};
+
+#endif // _PVBALL_H_

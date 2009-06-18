@@ -10,6 +10,7 @@
 #include <vector>
 
 #include "ExampleFrameListener.h"
+#include "PVPhysics.h"
 //#include "PVApplication.h"
 
 class PVApplication;
@@ -43,7 +44,7 @@ protected:
 	//Vector3 v;
 	
 	//bool move;
-	//PVhysicsNode *physicsNode;
+	PVPhysics *physicsNode;
 	PVApplication *m_pvApp;
 	
 	Radian kanoneMoveDelta ;

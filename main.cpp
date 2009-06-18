@@ -29,6 +29,7 @@ PVFrameListener::PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *
 	//v = Vector3(0,0,0);
 	//move = false;
 	//physicsNode = new PVPhysicsNode(mSceneMgr->getSceneNode("SphereNode"));
+	physicsNode = new PVPhysics();
 	kanoneMoveDelta = Radian(0.02);
 	escPressed = true;
 	
@@ -50,49 +51,7 @@ PVFrameListener::PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *
 
 bool PVFrameListener::frameStarted(const FrameEvent &evt)
 {
-	//PVTimer->messureTime();
-	//mMouse->capture();
-	//mKeyboard->capture();
-	
-	/****************    keyboard   *************************************/    	
-	//if(mKeyboard->isKeyDown(OIS::KC_ESCAPE)){
-	//	return false;
-	//}
-	
-	//if (mKeyboard->isKeyDown(OIS::KC_N))
-	//{
-	//	//physicsNode->setAcceleration(Vector3(50, 150, 0));
-	//	//move = true;
-	//}
-	//if (mKeyboard->isKeyDown(OIS::KC_R))
-	//{
-	//	//mSceneMgr->getSceneNode("SphereNode")->setPosition(-400, 0, 0);
-	//	//physicsNode->getNode()->setPosition(Vector3(-40, 0, 0));
-	//	//move = false;
-	//	////dtime = 0;
-	//	//physicsNode->setDtime(0);
-	//	////v = Vector3(0,0,0);
-	//	//physicsNode->setVelocity(Vector3(0,0,0));
-	
-	//}
-	//if (mKeyboard->isKeyDown(OIS::KC_ADD))
-	//{
-	//}
-	//if (mKeyboard->isKeyDown(OIS::KC_SUBTRACT))
-	//{
-	//}
-	//			
-	//if (move)
-	//{
-	//	//		
-	//	//physicsNode->move();
-	//	//				dtime += 0.03;
-	//}
-	//PVTimer::getInstance().messureTime();
-	/******************   mouse      ************************************/
-	//bool currMouseBool = mMouse->getMouseState().buttonDown(OIS::MB_Left);	
-	//mMouseDownBool = currMouseBool;
-	
+	physicsNode->simulate(m_pvApp->getBalls(), evt.timeSinceLastFrame);
 	return escPressed;
 }
 
@@ -185,29 +144,6 @@ void PVApplication::createViewports(void)
 
 void PVApplication::createScene(void)
 {
-	//mSceneMgr->setAmbientLight( ColourValue( 0.5, 0.5, 0.5 ) );
-	
-	
-	Entity *sphereEntity = mSceneMgr->createEntity( "SphereEntity", "sphere.mesh" );
-	
-	//mSceneMgr->getRootSceneNode()->addChild();
-	SceneNode *sphereNode = mSceneMgr->getRootSceneNode()->createChildSceneNode( "SphereNode" );
-	sphereNode->attachObject(sphereEntity);
-	sphereNode->translate(-40, 0, 0);
-	sphereNode->scale(0.02, 0.02,0.02);
-	//Entity *arenaEntity = mSceneMgr->createEntity("AreneEntity", "arena.mesh");
-	//SceneNode *arenaNode = mSceneMgr->getRootSceneNode()->createChildSceneNode( "ArenaNode", Vector3(0.0f, 6.5f,  0.0f)  );
-	//arenaNode->attachObject(arenaEntity);
-	
-	//Entity *torwandEntity = mSceneMgr->createEntity("TorwandEntity", "torwand.mesh");
-	//SceneNode *torwandNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("TorwandNode", Vector3(0.0f, 0.0f, -26.0f));
-	//torwandNode->attachObject(torwandEntity);
-	
-	Entity *kanoneEntity = mSceneMgr->createEntity("KanoneEntity", "kanone.mesh");
-	SceneNode *kanoneNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("KanoneNode", Vector3(0.0f, 4.3f, 37.5f));
-	//kanoneNode->pitch( Degree( 15.0 ) );
-	kanoneNode->attachObject(kanoneEntity);
-	
 	Light *light;
 	
 	light = mSceneMgr->createLight("Light1");
@@ -223,6 +159,33 @@ void PVApplication::createScene(void)
 	light->setPosition(Vector3(0,100,0));
 	light->setDiffuseColour(intensity, intensity, intensity);
 	light->setSpecularColour(intensity, intensity, intensity);
+	// All objects are exported without knowing their position in the real world. 
+	// You have to translate them manually.
+	
+	// arena
+	Entity* arenaEntity = mSceneMgr->createEntity( "ArenaEntity", "arena.mesh" );
+	SceneNode* arenaNode = mSceneMgr->getRootSceneNode()->createChildSceneNode( "ArenaNode", Vector3(0.0f, 6.5f,  0.0f) );
+	arenaNode->attachObject( arenaEntity );
+	
+	// goal wall
+	Entity* wallEntity = mSceneMgr->createEntity( "TorwandEntity", "wall.mesh" );
+	SceneNode* wallNode = mSceneMgr->getRootSceneNode()->createChildSceneNode( "TorwandNode", Vector3(0.0f, 0.0f, -26.0f) );
+	wallNode->attachObject( wallEntity );
+	
+	// pillar
+//	Entity* p1Entity = mSceneMgr->createEntity( "p1", "pillar.mesh" );
+//	SceneNode* p1Node = mSceneMgr->getRootSceneNode()->createChildSceneNode( "p1Node", Vector3(26.0f, 14.6f, -12.0f) );
+//	p1Node->attachObject( p1Entity );
+//	
+//	Entity* p2Entity = mSceneMgr->createEntity( "p2", "pillar.mesh" );
+//	SceneNode* p2Node = mSceneMgr->getRootSceneNode()->createChildSceneNode( "p2Node", Vector3(-26.0f, 14.6f, -12.0f) );
+//	p2Node->attachObject( p2Entity );
+	
+	// cannon
+	Entity* cannonEntity = mSceneMgr->createEntity( "KanoneEntity", "cannon.mesh" );
+	SceneNode* cannonNode = mSceneMgr->getRootSceneNode()->createChildSceneNode( "KanoneNode", Vector3(0.0f, 4.3f, 37.5f) );
+	cannonNode->pitch( Degree( 15.0 ) );
+	cannonNode->attachObject( cannonEntity );
 }
 
 void PVApplication::createFrameListener(void)
