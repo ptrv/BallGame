@@ -12,7 +12,6 @@
 		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
 		D05761A20FE8514100E83EB4 /* PVNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05761A10FE8514100E83EB4 /* PVNode.cpp */; };
 		D05761AC0FE8518F00E83EB4 /* PVPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */; };
-		D05764260FE851C800E83EB4 /* PVBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05764250FE851C800E83EB4 /* PVBall.cpp */; };
 		D0672B1A0FA7C5D40085D243 /* Cg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B180FA7C5D40085D243 /* Cg.framework */; };
 		D0672B1B0FA7C5D40085D243 /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B190FA7C5D40085D243 /* Ogre.framework */; };
 		D0672B210FA7C5F40085D243 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0672B200FA7C5F40085D243 /* IOKit.framework */; };
@@ -52,8 +51,6 @@
 		D05761A10FE8514100E83EB4 /* PVNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVNode.cpp; sourceTree = "<group>"; };
 		D05761AA0FE8518F00E83EB4 /* PVPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPhysics.h; sourceTree = "<group>"; };
 		D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVPhysics.cpp; sourceTree = "<group>"; };
-		D05764240FE851C800E83EB4 /* PVBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVBall.h; sourceTree = "<group>"; };
-		D05764250FE851C800E83EB4 /* PVBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVBall.cpp; sourceTree = "<group>"; };
 		D0672B180FA7C5D40085D243 /* Cg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cg.framework; path = ../../../../../development/MyLib/OgreSDK/Dependencies/Cg.framework; sourceTree = SOURCE_ROOT; };
 		D0672B190FA7C5D40085D243 /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogre.framework; path = ../../../../../development/MyLib/OgreSDK/Dependencies/Ogre.framework; sourceTree = SOURCE_ROOT; };
 		D0672B200FA7C5F40085D243 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
@@ -113,8 +110,6 @@
 				D05761A10FE8514100E83EB4 /* PVNode.cpp */,
 				D05761AA0FE8518F00E83EB4 /* PVPhysics.h */,
 				D05761AB0FE8518F00E83EB4 /* PVPhysics.cpp */,
-				D05764240FE851C800E83EB4 /* PVBall.h */,
-				D05764250FE851C800E83EB4 /* PVBall.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -207,7 +202,6 @@
 				8D0C4E900486CD37000505A6 /* main.cpp in Sources */,
 				D05761A20FE8514100E83EB4 /* PVNode.cpp in Sources */,
 				D05761AC0FE8518F00E83EB4 /* PVPhysics.cpp in Sources */,
-				D05764260FE851C800E83EB4 /* PVBall.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +265,7 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/include\"",
 					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/Ogre.framework/Versions/A/Headers\"",
-					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Dependencies/CEGUI.framework/Versions/A/Headers\"",
+					"\"$(SRCROOT)/../../../../../development/MyLib/OgreSDK/Samples/include\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";

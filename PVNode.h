@@ -8,36 +8,58 @@
 #include "Ogre.h"
 
 using namespace Ogre;
+
+enum Direction 
+{
+	LEFT,
+	RIGHT,
+	UP,
+	DOWN
+};
+
 class PVNode
 	{
 	public:
-		PVNode();
-		PVNode(SceneNode *node, Entity *entity);
-		virtual ~PVNode();
+		PVNode(const String& name, SceneNode *node, Entity *entity);
+		~PVNode();
 		
-		SceneNode *getSceneNode() { return m_node; };
-		Entity *getEntity() { return m_entity; };
+		SceneNode *getSceneNode() { return m_node; }
+		Entity *getEntity() { return m_entity; }
+		const String &getName() { return m_name; }
+		
 		Vector3 getVelocity() { return m_velocity; }
 		Vector3 getAcceleration() { return m_acceleration; }
 		Vector3 getPosition() { return m_node->getPosition(); }
-		Vector3 getMin() { return m_min; }
-		Vector3 getMax() { return m_max; } 
+		Vector3 getOrientation();
+		Vector3 getNormal();
 		
-		void setVelocity(Vector3 v);
-		void setAcceleration(Vector3 a);
-		void setPosition(Vector3 p);
-		void setMax(Vector3 max);
-		void setMin(Vector3 min);
+		void setVelocity(const Vector3 &v);
+		void setAcceleration(const Vector3 &a);
+		void setPosition(const Vector3 &p);
+		void setOrientation(const Vector3 &o);
 		
-		virtual bool intersect() = 0;
+		void translateNode(Vector3 trans);
+		void rotateNode(Direction dir);
+		bool hasAcceleration();
 		
 	private:
 		SceneNode *m_node;
 		Entity *m_entity;
-		Vector3 m_min;
-		Vector3 m_max;
+		const String &m_name;
+		
+		static float m_angle;
+		static float m_minH;
+		static float m_maxH;
+		static float m_minV;
+		static float m_maxV;
+		
+		float m_pitch;
+		float m_yaw;
+		
 		Vector3 m_velocity;
 		Vector3 m_acceleration;
+		Vector3 m_position;
+		Vector3 m_orientation;
 	};
 
 #endif // _PVNODE_H_

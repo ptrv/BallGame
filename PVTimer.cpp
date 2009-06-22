@@ -6,11 +6,8 @@
 #include <iostream>
 
 PVTimer* PVTimer::m_instance = 0;
-
-PVTimer::PVTimer() : 
-	lastTime(clock()),
-	performanceTimer(0.0),
-	performanceCount(0)
+double PVTimer::lastTime = 0;
+PVTimer::PVTimer()
 {
 }
 
@@ -18,27 +15,17 @@ PVTimer::~PVTimer()
 {
 }
 
-bool PVTimer::messureTime()
+double PVTimer::messureTime()
 {
 	clock_t currentTime = clock();
 	double time = diffClockMs(currentTime, lastTime);
 	lastTime = currentTime;
-	performanceTimer += time;
-	++performanceCount;
-	
-	if ( performanceTimer >= 0.03 )
-	{
-		//std::cout << "simulations per 0.3 miliseconds: " << performanceCount << std::endl;
-		performanceTimer = 0.0;
-		//performanceCount = 0;
-		return true;
-	}
-	return false;
+	return time;
 }
 
 double PVTimer::diffClockMs(clock_t t1, clock_t t2)
 {
 	double diffTicks = t1 - t2;
-	double diffMs = diffTicks / CLOCKS_PER_SEC;
+	double diffMs = diffTicks / 1000;
 	return diffMs;
 }

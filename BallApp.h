@@ -6,8 +6,9 @@
 
 #include <Carbon/Carbon.h>
 #include "ExampleApplication.h"
-#include "PVBall.h"
+#include "PVNode.h"
 #include <vector>
+#include <map>
 
 #include "ExampleFrameListener.h"
 #include "PVPhysics.h"
@@ -18,14 +19,8 @@ class PVFrameListener : public ExampleFrameListener, public OIS::KeyListener
 {
 public:
 	PVFrameListener();
-	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, PVApplication *pvApp );
-	// //Overriding the default processUnbufferedKeyInput so the key updates we define
-	// //later on work as intended.
-	//bool processUnbufferedKeyInput(const FrameEvent& evt);
-	
-	// //Overriding the default processUnbufferedMouseInput so the Mouse updates we define
-	// //later on work as intended. 
-	//bool processUnbufferedMouseInput(const FrameEvent& evt);
+	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls );
+
 	bool frameStarted(const FrameEvent &evt);
 	bool keyPressed( const OIS::KeyEvent &arg );
 	bool keyReleased( const OIS::KeyEvent &arg );  
@@ -38,17 +33,21 @@ protected:
 	SceneManager *mSceneMgr;   // The current SceneManager
 	SceneNode *mCamNode;   // The SceneNode the camera is currently attached to
 	
-	//int speed;
-	//float dtime;
-	//bool first;
-	//Vector3 v;
 	
-	//bool move;
-	PVPhysics *physicsNode;
-	PVApplication *m_pvApp;
 	
-	Radian kanoneMoveDelta ;
-	bool escPressed;
+	bool mContinue;
+private:
+	PVPhysics *m_physicsNode;
+	//PVTimer *m_timer;
+	std::map<std::string, PVNode*>& m_objectMap;
+	std::map<std::string, PVNode*>::iterator it;
+	
+	PVNode *kanone;
+	
+	std::vector<PVNode*>& m_balls;
+	int m_index;
+	
+	void shootBall();
 };
 
 class PVApplication : public ExampleApplication
@@ -58,8 +57,8 @@ class PVApplication : public ExampleApplication
 		
 		~PVApplication();
 		
-		void createBall();
-		std::vector<PVBall*>& getBalls();
+		//void createBall();
+		//std::vector<PVBall*>& getBalls();
 	protected:
 		void createCamera(void);
 		
@@ -69,17 +68,8 @@ class PVApplication : public ExampleApplication
 		
 		void createFrameListener(void);
 		
-	private:
-		//Entity* sphereEntity;
-		//Entity *arenaEntity;
-		//Entity *torwandEntity;
-		//Entity *kanoneEntity;
-		//SceneNode* sphereNode;
-		//SceneNode *arenaNode;
-		//SceneNode *torwandNode;
-		//SceneNode *kanoneNode;
-		//Light *light;
-		std::vector<PVBall*> m_balls;
+		std::map<std::string, PVNode*> m_objectMap;
+		std::vector<PVNode*> m_balls;
 		
 	};
 

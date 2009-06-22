@@ -21,15 +21,13 @@ class PVTimer
 			return *m_instance;
 		}
 		
-		bool messureTime();
+		double messureTime();
 		double diffClockMs(clock_t t1, clock_t t2);
 
 	private:
 		static PVTimer* m_instance;
-		clock_t lastTime;
-		double performanceTimer;
-		unsigned int performanceCount;
-		unsigned int simulationsPerSec;
+		double static lastTime;
+
 	};
 
 #endif //_PVTIMER_H_

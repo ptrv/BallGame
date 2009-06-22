@@ -4,41 +4,42 @@
 
 #include <Carbon/Carbon.h>
 #include "PVPhysics.h"
-#include "PVTimer.h"
+//#include "PVTimer.h"
 
 const Vector3 PVPhysics::GRAVITY = Vector3(0, -9.81, 0);
-const float PVPhysics::DAMPING = 0.85;
+const float PVPhysics::DAMPING = 0.99;
 
-PVPhysics::PVPhysics() :
-m_dtime(0.0f)
+PVPhysics::PVPhysics()
 {
+	//PVTimer::getInstance();
 }
 
 PVPhysics::~PVPhysics()
 {
 }
 
-void PVPhysics::simulate(std::vector<PVBall*>& balls, double timeMs)
+void PVPhysics::simulate(std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls, int numberOfFlyingBalls, float time)
 {
-	m_dtime = timeMs;
-	
-	for(unsigned int i = 0; i < balls.size(); ++i)
+	for(unsigned int i = 0; i < numberOfFlyingBalls; ++i)
 	{
-		move(balls.at(i), m_dtime);
-		std::cout << "test" << std::endl;
+		move(balls.at(i), time);
+		std::cout << time << std::endl;
 	}
 }
 
-void PVPhysics::move(PVBall* ball, double timeMs)
+void PVPhysics::move(PVNode* ball, float time)
 {
-	Vector3 position = ball->getPosition();
-	Vector3 velocity = ball->getVelocity();
-	Vector3 acceleration = ball->getAcceleration();
+	double deltaT = time;
+	if (deltaT < 0.0)
+	{
+		deltaT = 0.2;
+	}
+	ball->setVelocity( ball->getVelocity() += ball->getAcceleration() * deltaT);
+	ball->setPosition( ball->getPosition() += (ball->getVelocity() * deltaT) + (ball->getAcceleration() * (deltaT * deltaT)/2));
 	
-	velocity += (acceleration * timeMs);
-	
-	position += ((velocity * timeMs) + (acceleration * (timeMs * timeMs) / 2));
-	
-	ball->setVelocity(velocity);
-	ball->setPosition(position);
+	if (ball->getAcceleration() != GRAVITY) 
+	{
+		ball->setAcceleration(GRAVITY);
+	}
+					  
 }

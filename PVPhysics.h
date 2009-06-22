@@ -19,12 +19,11 @@ class PVPhysics
 		PVPhysics();
 		~PVPhysics();
 		
-		void setDtime(float t) { m_dtime = t; };
+		//void setDtime(float t) { m_dtime = t; };
 		
-		void simulate(std::vector<PVBall*>& balls, double timeMs);
-		void move(PVBall* ball, double timeMs);
+		void simulate(std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls, int numberOfFlyingBalls, float time);
+		void move(PVNode* ball, float time);
 		
 	private:
-		float m_dtime;
-		//Vector3 m_g;
+		
 	};
