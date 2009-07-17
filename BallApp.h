@@ -19,7 +19,7 @@ class PVFrameListener : public ExampleFrameListener, public OIS::KeyListener
 {
 public:
 	PVFrameListener();
-	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls );
+	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls, PVApplication *app );
 
 	bool frameStarted(const FrameEvent &evt);
 	bool keyPressed( const OIS::KeyEvent &arg );
@@ -47,7 +47,12 @@ private:
 	std::vector<PVNode*>& m_balls;
 	int m_index;
 	
+	float m_shootingSpeedFactor;
+	
 	void shootBall();
+	
+		
+	PVApplication *m_app;
 };
 
 class PVApplication : public ExampleApplication
@@ -59,6 +64,9 @@ class PVApplication : public ExampleApplication
 		
 		//void createBall();
 		//std::vector<PVBall*>& getBalls();
+		int m_numberOfBalls;
+		void clearAllBalls();
+		void createBalls();
 	protected:
 		void createCamera(void);
 		
@@ -70,6 +78,8 @@ class PVApplication : public ExampleApplication
 		
 		std::map<std::string, PVNode*> m_objectMap;
 		std::vector<PVNode*> m_balls;
+		
+		
 		
 	};
 

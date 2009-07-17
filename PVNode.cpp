@@ -4,7 +4,7 @@
 #include <Carbon/Carbon.h>
 #include "PVNode.h"
 
-float PVNode::m_angle	=   5.0;
+float PVNode::m_angle	=   1.0;
 float PVNode::m_maxH	=  65.0;
 float PVNode::m_minH 	= -65.0;
 float PVNode::m_maxV	=  75.0;
@@ -68,8 +68,8 @@ void PVNode::rotateNode(Direction dir)
 	switch (dir) {
 		case UP:	if ( (m_pitch +=  m_angle) >= m_maxV ) m_pitch = m_maxV;	break;
 		case DOWN:	if ( (m_pitch -=  m_angle) <= m_minV ) m_pitch = m_minV;	break;
-		case RIGHT:	if ( (m_yaw	+=  m_angle) >= m_maxH ) m_yaw = m_maxH;	break;
-		case LEFT:	if ( (m_yaw	-=  m_angle) <= m_minH ) m_yaw = m_minH;	break;
+		case LEFT:	if ( (m_yaw	+=  m_angle) >= m_maxH ) m_yaw = m_maxH;	break;
+		case RIGHT:	if ( (m_yaw	-=  m_angle) <= m_minH ) m_yaw = m_minH;	break;
 		default:
 			break;
 	}

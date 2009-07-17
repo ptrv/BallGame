@@ -10,7 +10,7 @@
 //#include <Carbon/Carbon.h>
 #include "Ogre.h"
 //#include <string>
-#include "PVBall.h"
+#include "PVNode.h"
 
 using namespace Ogre;
 class PVPhysics
@@ -33,13 +33,12 @@ class PVPhysics
 		void collisionWithWall(PVNode *wall, PVNode *ball);
 		void collisionWithCannon(PVNode *kanone, PVNode *ball);
 		void collisionWithBall(PVNode *ball1, PVNode *ball2);
+		void collisionWithPillar(PVNode *pillar, PVNode *ball);
 		
 		void handleCollision(PVNode *fixedNode, PVNode *ball);
 		void handleCollisionWithGround(PVNode * fixedNode, PVNode *ball);
 		void handleCollisionWithBall(PVNode *ball1, PVNode *ball2);
-		
-		Vector3 invert(Vector3 vec);
-		
+				
 	private:
 		
 	};

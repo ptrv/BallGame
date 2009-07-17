@@ -59,7 +59,8 @@ class PVNode
 		Vector3 m_velocity;
 		Vector3 m_acceleration;
 		Vector3 m_position;
-		Vector3 m_orientation;
+		Vector3	m_orientation;
+
 	};
 
 #endif // _PVNODE_H_
