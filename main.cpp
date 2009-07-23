@@ -1,14 +1,21 @@
 
 #include "BallApp.h"
-//#include "PVApplication.h"
-//#include "PVFrameListener.h"
 #include <sstream>
 
 using namespace Ogre;
 
 
-PVFrameListener::PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls, PVApplication *app)
-: ExampleFrameListener(win, cam, true, false), m_objectMap(objectMap), m_balls(balls), m_app(app)
+PVFrameListener::PVFrameListener(RenderWindow* win, 
+								 Camera* cam, 
+								 SceneManager *sceneMgr, 
+								 std::map<std::string, PVNode*>& objectMap, 
+								 std::vector<PVNode*>& balls, 
+								 PVApplication *app)
+
+: ExampleFrameListener(win, cam, true, false), 
+m_objectMap(objectMap), 
+m_balls(balls), 
+m_app(app)
 {
 	// key and mouse state tracking
 	mMouseDownBool = false;

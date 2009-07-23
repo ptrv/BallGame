@@ -25,9 +25,12 @@ public:
 	 * \param objectMap a map with PVNodes.
 	 * \param app an instance of PVApplication.
 	 */
-	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, 
+	PVFrameListener(RenderWindow* win, 
+					Camera* cam, 
+					SceneManager *sceneMgr, 
 					std::map<std::string, PVNode*>& objectMap, 
-					std::vector<PVNode*>& balls, PVApplication *app );
+					std::vector<PVNode*>& balls, 
+					PVApplication *app );
 
 	/**
 	 * \brief Ogre callback function for simulation.
@@ -52,10 +55,7 @@ protected:
 	Real mRotate;          ///< The rotate constant
 	Real mMove;            ///< The movement constant
 	SceneManager *mSceneMgr;   ///< The current SceneManager
-	SceneNode *mCamNode;   ///< The SceneNode the camera is currently attached to
-	
-	
-	
+	SceneNode *mCamNode;   ///< The SceneNode the camera is currently attached to	
 	bool mContinue;
 private:
 	/// Physics class.
@@ -108,9 +108,6 @@ class PVApplication : public ExampleApplication
 		std::map<std::string, PVNode*> m_objectMap;
 		/// vector with balls.
 		std::vector<PVNode*> m_balls;
-		
-		
-		
 	};
 
 #endif // _PVAPPLICATION_H_#endif //_BALLAPP_H_

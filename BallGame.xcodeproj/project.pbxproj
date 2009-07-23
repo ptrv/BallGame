@@ -23,7 +23,6 @@
 		D0672C410FA7C8D90085D243 /* Ogre.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0672B190FA7C5D40085D243 /* Ogre.framework */; };
 		D0672CCC0FA7D0350085D243 /* media.cfg in Resources */ = {isa = PBXBuildFile; fileRef = D0672CCB0FA7D0350085D243 /* media.cfg */; };
 		D0672E830FA7D0550085D243 /* Media in Resources */ = {isa = PBXBuildFile; fileRef = D0672CCD0FA7D0540085D243 /* Media */; };
-		D08A26610FCC89200070AADD /* PVTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0A172400FCC68770027501B /* PVTimer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,8 +59,6 @@
 		D0672CCB0FA7D0350085D243 /* media.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = media.cfg; sourceTree = "<group>"; };
 		D0672CCD0FA7D0540085D243 /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Media; sourceTree = "<group>"; };
 		D06822F10FDFD868005BE34A /* BallApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallApp.h; sourceTree = "<group>"; };
-		D0A1723F0FCC68770027501B /* PVTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTimer.h; sourceTree = "<group>"; };
-		D0A172400FCC68770027501B /* PVTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVTimer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				20286C2BFDCF999611CA2CEA /* main.cpp */,
-				D0A1723F0FCC68770027501B /* PVTimer.h */,
-				D0A172400FCC68770027501B /* PVTimer.cpp */,
 				D06822F10FDFD868005BE34A /* BallApp.h */,
 				D05761A00FE8514100E83EB4 /* PVNode.h */,
 				D05761A10FE8514100E83EB4 /* PVNode.cpp */,
@@ -198,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08A26610FCC89200070AADD /* PVTimer.cpp in Sources */,
 				8D0C4E900486CD37000505A6 /* main.cpp in Sources */,
 				D05761A20FE8514100E83EB4 /* PVNode.cpp in Sources */,
 				D05761AC0FE8518F00E83EB4 /* PVPhysics.cpp in Sources */,

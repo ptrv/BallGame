@@ -5,11 +5,7 @@
 #ifndef _PVPHYSICS_H_
 #define _PVPHYSICS_H_
 
-//#include <Carbon/Carbon.h>
-//#include "ExampleApplication.h"
-//#include <Carbon/Carbon.h>
 #include "Ogre.h"
-//#include <string>
 #include "PVNode.h"
 
 using namespace Ogre;

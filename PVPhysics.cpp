@@ -4,7 +4,6 @@
 
 #include <Carbon/Carbon.h>
 #include "PVPhysics.h"
-//#include "PVTimer.h"
 
 const Vector3 PVPhysics::GRAVITY = Vector3(0, -9.81, 0);
 const float PVPhysics::DAMPING = 0.85;

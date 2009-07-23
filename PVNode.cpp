@@ -15,9 +15,9 @@ PVNode::PVNode(const String &name, SceneNode *node, Entity *entity)
 m_name(name),
 m_node(node),
 m_entity(entity),
-m_position(Vector3(0,0,0)),
-m_velocity(Vector3(0,0,0)),
-m_acceleration(Vector3(0,0,0)),
+m_position(Vector3::ZERO),
+m_velocity(Vector3::ZERO),
+m_acceleration(Vector3::ZERO),
 m_yaw(0.0),
 m_pitch(0.0)
 {
