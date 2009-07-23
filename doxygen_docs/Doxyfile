@@ -671,7 +671,7 @@ FILTER_SOURCE_FILES    = NO
 # Note: To get rid of all source code in the generated output, make sure also 
 # VERBATIM_HEADERS is set to NO.
 
-SOURCE_BROWSER         = NO
+SOURCE_BROWSER         = YES
 
 # Setting the INLINE_SOURCES tag to YES will include the body 
 # of functions and classes directly in the documentation.
@@ -947,7 +947,7 @@ GENERATE_TREEVIEW      = ALL
 # used to set the initial width (in pixels) of the frame in which the tree 
 # is shown.
 
-TREEVIEW_WIDTH         = 0
+TREEVIEW_WIDTH         = 200
 
 # Use this tag to change the font size of Latex formulas included 
 # as images in the HTML documentation. The default is 10. Note that 

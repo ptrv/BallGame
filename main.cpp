@@ -1,4 +1,9 @@
 
+/**
+ * \mainpage Application for demonstrating physics in computer graphics.
+ */
+
+
 #include "BallApp.h"
 #include <sstream>
 
@@ -45,7 +50,8 @@ m_app(app)
 	
 	m_shootingSpeedFactor = 4.0;
 	
-	
+	lastT = 0;
+	autoShoot = false;
 }
 
 bool PVFrameListener::frameStarted(const FrameEvent &evt)
@@ -56,6 +62,12 @@ bool PVFrameListener::frameStarted(const FrameEvent &evt)
 	mMouseDownBool = currMouseBool;
 	
 	m_physicsNode->simulate(m_objectMap, m_balls, m_index, evt.timeSinceLastFrame);
+	
+	if (autoShoot) 
+	{
+		shootBallsAuto(evt.timeSinceLastFrame);
+	}
+	
 	
 	return mContinue;
 }
@@ -126,10 +138,40 @@ bool PVFrameListener::keyPressed(const OIS::KeyEvent &arg)
 			m_app->clearAllBalls();
 			m_index = 0;
 			break;
-			
-			
+		case OIS::KC_5:
+			if (autoShoot) 
+			{
+				autoShoot = false;
+				std::cout << "autoShoot off" << std::endl;
+			}
+			else
+			{
+				autoShoot = true;
+				//kanone->setKanoneMaxLeft();
+				std::cout << "autoShoot on" << std::endl;
+			}
+			break;			
 	}
 	return mContinue;
+}
+
+void PVFrameListener::shootBallsAuto(float t)
+{
+	lastT += t;
+	if(m_index < m_app->m_numberOfBalls - 1)
+	{
+		if (lastT > 0.2) 
+		{
+			m_balls[m_index]->setAcceleration( kanone->getOrientation() * Vector3(20.0, 20.0, 20.0) );
+			m_balls[m_index]->setVelocity( kanone->getOrientation() * Vector3(10.0, 10.0, 10.0)* m_shootingSpeedFactor);
+			std::cout << "Bälle: " << (m_index + 1) << std::endl; 
+			++m_index;
+			lastT = 0;
+			//kanone->rotateNode(RIGHT);
+		}
+		
+	}
+
 }
 
 bool PVFrameListener::keyReleased(const OIS::KeyEvent &arg)

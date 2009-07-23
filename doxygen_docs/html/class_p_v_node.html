@@ -10,6 +10,7 @@
     <ul>
       <li><a href="main.html"><span>Main&nbsp;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
   <div class="tabs">
@@ -21,9 +22,7 @@
   </div>
 </div>
 <div class="contents">
-<h1>PVNode Class Reference</h1><!-- doxytag: class="PVNode" -->Inherited by <a class="el" href="class_p_v_ball.html">PVBall</a>.
-<p>
-<div class="dynheader">
+<h1>PVNode Class Reference</h1><!-- doxytag: class="PVNode" --><div class="dynheader">
 Collaboration diagram for PVNode:</div>
 <div class="dynsection">
 <p><center><img src="class_p_v_node__coll__graph.png" border="0" usemap="#_p_v_node__coll__map" alt="Collaboration graph"></center>
@@ -49,7 +48,11 @@ Collaboration diagram for PVNode:</div>
 <li>void <a class="el" href="class_p_v_node.html#19695ff7c8e2783f7c7e50762d612741">translateNode</a> (Vector3 trans)
 <li>void <a class="el" href="class_p_v_node.html#e5d02f656efde63f5127f7b98561f9f2">rotateNode</a> (Direction dir)
 <li>bool <a class="el" href="class_p_v_node.html#ffd742f192b5080e10c8f5a250e02d5d">hasAcceleration</a> ()
+<li>void <a class="el" href="class_p_v_node.html#42909f56f995e984ae5c07aa04dff84a">setKanoneMaxLeft</a> ()
 </ul>
+<hr><a name="_details"></a><h2>Detailed Description</h2>
+
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00021">21</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
 <hr><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" name="b0e321e6d966cf903636415812a3b602"></a><!-- doxytag: member="PVNode::PVNode" ref="b0e321e6d966cf903636415812a3b602" args="(const String &amp;name, SceneNode *node, Entity *entity)" -->
 <div class="memitem">
@@ -93,6 +96,8 @@ Constructor.
   </table>
 </dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00013">13</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="ba1e77b8f78ad87fdb86038f09d46325"></a><!-- doxytag: member="PVNode::~PVNode" ref="ba1e77b8f78ad87fdb86038f09d46325" args="()" -->
@@ -113,6 +118,8 @@ Constructor.
 <p>
 Destructor. 
 <p>
+
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00027">27</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -135,6 +142,8 @@ Destructor.
 <p>
 getter for SceneNode. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_node a SceneNode pointer. </dd></dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00038">38</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="8a47ecdcd84e3ab1efcd5f7b188421e0"></a><!-- doxytag: member="PVNode::getEntity" ref="8a47ecdcd84e3ab1efcd5f7b188421e0" args="()" -->
@@ -154,6 +163,8 @@ getter for SceneNode. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_n
 
 <p>
 getter for Entity. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_entity an Entity pointer. </dd></dl>
+
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00043">43</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
 
 </div>
 </div><p>
@@ -175,6 +186,8 @@ getter for Entity. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_enti
 <p>
 getter for PVnode name. <dl class="return" compact><dt><b>Returns:</b></dt><dd>name a string. </dd></dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00048">48</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="998e3f1a2319eff7b2273b0d35125d25"></a><!-- doxytag: member="PVNode::getVelocity" ref="998e3f1a2319eff7b2273b0d35125d25" args="()" -->
@@ -194,6 +207,8 @@ getter for PVnode name. <dl class="return" compact><dt><b>Returns:</b></dt><dd>n
 
 <p>
 getter for PVnode velocity. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_velocity a Vector3. </dd></dl>
+
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00053">53</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
 
 </div>
 </div><p>
@@ -215,6 +230,8 @@ getter for PVnode velocity. <dl class="return" compact><dt><b>Returns:</b></dt><
 <p>
 getter for PVnode acceleration. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_acceleration a Vector3. </dd></dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00058">58</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="abc34042de0783c6b86084f2a2960edc"></a><!-- doxytag: member="PVNode::getPosition" ref="abc34042de0783c6b86084f2a2960edc" args="()" -->
@@ -234,6 +251,8 @@ getter for PVnode acceleration. <dl class="return" compact><dt><b>Returns:</b></
 
 <p>
 getter for PVnode position. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_position a Vector3. </dd></dl>
+
+<p>Definition at line <a class="el" href="_p_v_node_8h_source.html#l00063">63</a> of file <a class="el" href="_p_v_node_8h_source.html">PVNode.h</a>.</p>
 
 </div>
 </div><p>
@@ -255,6 +274,8 @@ getter for PVnode position. <dl class="return" compact><dt><b>Returns:</b></dt><
 <p>
 getter for PVnode orietation. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_orientation a Vector3. </dd></dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00047">47</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="cbd1e4f9c58205a8ad56d8ff9c855c25"></a><!-- doxytag: member="PVNode::getNormal" ref="cbd1e4f9c58205a8ad56d8ff9c855c25" args="()" -->
@@ -274,6 +295,8 @@ getter for PVnode orietation. <dl class="return" compact><dt><b>Returns:</b></dt
 
 <p>
 getter for PVnode normal. <dl class="return" compact><dt><b>Returns:</b></dt><dd>m_normal a Vector3. </dd></dl>
+
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00053">53</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -410,6 +433,8 @@ translate a PVnode.
   </table>
 </dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00060">60</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="e5d02f656efde63f5127f7b98561f9f2"></a><!-- doxytag: member="PVNode::rotateNode" ref="e5d02f656efde63f5127f7b98561f9f2" args="(Direction dir)" -->
@@ -437,6 +462,8 @@ rotates a PVnode in a direction.
   </table>
 </dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00065">65</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="ffd742f192b5080e10c8f5a250e02d5d"></a><!-- doxytag: member="PVNode::hasAcceleration" ref="ffd742f192b5080e10c8f5a250e02d5d" args="()" -->
@@ -459,12 +486,35 @@ checks if <a class="el" href="class_p_v_node.html">PVNode</a> has acceleration.
 <p>
 <dl class="return" compact><dt><b>Returns:</b></dt><dd>true if <a class="el" href="class_p_v_node.html">PVNode</a> has an acceleration != 0. </dd></dl>
 
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00086">86</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="42909f56f995e984ae5c07aa04dff84a"></a><!-- doxytag: member="PVNode::setKanoneMaxLeft" ref="42909f56f995e984ae5c07aa04dff84a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PVNode::setKanoneMaxLeft           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>Definition at line <a class="el" href="_p_v_node_8cpp_source.html#l00080">80</a> of file <a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a>.</p>
+
 </div>
 </div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
-<li>PVNode.h<li>PVNode.cpp</ul>
+<li><a class="el" href="_p_v_node_8h_source.html">PVNode.h</a><li><a class="el" href="_p_v_node_8cpp_source.html">PVNode.cpp</a></ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Thu Jul 23 12:35:44 2009 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Thu Jul 23 20:01:44 2009 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
 </body>

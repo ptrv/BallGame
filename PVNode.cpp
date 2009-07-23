@@ -77,6 +77,12 @@ void PVNode::rotateNode(Direction dir)
 	m_node->yaw( Degree( m_yaw ) );
 }
 
+void PVNode::setKanoneMaxLeft()
+{
+	//m_node->pitch(Degree( m_minV));
+	m_node->yaw(Degree(m_minH));
+}
+
 bool PVNode::hasAcceleration()
 {
 	int value = this->m_acceleration[0] * this->m_acceleration[0] + this->m_acceleration[1] * this->m_acceleration[1] + this->m_acceleration[2] * this->m_acceleration[2];

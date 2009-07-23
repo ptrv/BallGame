@@ -108,6 +108,8 @@ class PVNode
 		 */
 		bool hasAcceleration();
 		
+		void setKanoneMaxLeft();
+		
 	private:
 		/// the SceneNode.
 		SceneNode *m_node;

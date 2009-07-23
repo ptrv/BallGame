@@ -78,6 +78,11 @@ private:
 	 */
 	void shootBall();
 	
+	void shootBallsAuto(float t);
+	
+	float lastT;
+	
+	bool autoShoot;
 	/// An instance of PVApplication
 	PVApplication *m_app;
 };
