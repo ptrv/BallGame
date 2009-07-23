@@ -19,7 +19,9 @@ class PVFrameListener : public ExampleFrameListener, public OIS::KeyListener
 {
 public:
 	PVFrameListener();
-	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, std::map<std::string, PVNode*>& objectMap, std::vector<PVNode*>& balls, PVApplication *app );
+	PVFrameListener( RenderWindow* win, Camera* cam, SceneManager *sceneMgr, 
+					std::map<std::string, PVNode*>& objectMap, 
+					std::vector<PVNode*>& balls, PVApplication *app );
 
 	bool frameStarted(const FrameEvent &evt);
 	bool keyPressed( const OIS::KeyEvent &arg );
