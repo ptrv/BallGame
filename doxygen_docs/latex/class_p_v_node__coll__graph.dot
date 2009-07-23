@@ -1,0 +1,5 @@
+digraph G
+{
+  edge [fontname="FreeSans",fontsize="4",labelfontname="FreeSans",labelfontsize="4"];
+  node [fontname="FreeSans",fontsize="4",shape=record];
+}

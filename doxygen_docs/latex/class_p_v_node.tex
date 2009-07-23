@@ -1,0 +1,216 @@
+\section{PVNode Class Reference}
+\label{class_p_v_node}\index{PVNode@{PVNode}}
+Inherited by {\bf PVBall}.
+
+Collaboration diagram for PVNode:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=44pt]{class_p_v_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf PVNode} (const String \&name, SceneNode $\ast$node, Entity $\ast$entity)
+\item 
+{\bf $\sim$PVNode} ()
+\item 
+SceneNode $\ast$ {\bf getSceneNode} ()
+\item 
+Entity $\ast$ {\bf getEntity} ()
+\item 
+const String \& {\bf getName} ()
+\item 
+Vector3 {\bf getVelocity} ()
+\item 
+Vector3 {\bf getAcceleration} ()
+\item 
+Vector3 {\bf getPosition} ()
+\item 
+Vector3 {\bf getOrientation} ()
+\item 
+Vector3 {\bf getNormal} ()
+\item 
+void {\bf setVelocity} (const Vector3 \&v)
+\item 
+void {\bf setAcceleration} (const Vector3 \&a)
+\item 
+void {\bf setPosition} (const Vector3 \&p)
+\item 
+void {\bf setOrientation} (const Vector3 \&o)
+\item 
+void {\bf translateNode} (Vector3 trans)
+\item 
+void {\bf rotateNode} (Direction dir)
+\item 
+bool {\bf hasAcceleration} ()
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{PVNode@{PVNode}!PVNode@{PVNode}}
+\index{PVNode@{PVNode}!PVNode@{PVNode}}
+\subsubsection[{PVNode}]{\setlength{\rightskip}{0pt plus 5cm}PVNode::PVNode (const String \& {\em name}, \/  SceneNode $\ast$ {\em node}, \/  Entity $\ast$ {\em entity})}\label{class_p_v_node_b0e321e6d966cf903636415812a3b602}
+
+
+Constructor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&name}]a string. \item[{\em $\ast$node}]an Ogre::SceneNode. \item[{\em $\ast$entity}]an Ogre::Entity. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!$\sim$PVNode@{$\sim$PVNode}}
+\index{$\sim$PVNode@{$\sim$PVNode}!PVNode@{PVNode}}
+\subsubsection[{$\sim$PVNode}]{\setlength{\rightskip}{0pt plus 5cm}PVNode::$\sim$PVNode ()}\label{class_p_v_node_ba1e77b8f78ad87fdb86038f09d46325}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{PVNode@{PVNode}!getSceneNode@{getSceneNode}}
+\index{getSceneNode@{getSceneNode}!PVNode@{PVNode}}
+\subsubsection[{getSceneNode}]{\setlength{\rightskip}{0pt plus 5cm}SceneNode$\ast$ PVNode::getSceneNode ()}\label{class_p_v_node_10859a9c5008c31f8a48bb804a21c7e5}
+
+
+getter for SceneNode. \begin{Desc}
+\item[Returns:]m\_\-node a SceneNode pointer. \end{Desc}
+\index{PVNode@{PVNode}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!PVNode@{PVNode}}
+\subsubsection[{getEntity}]{\setlength{\rightskip}{0pt plus 5cm}Entity$\ast$ PVNode::getEntity ()}\label{class_p_v_node_8a47ecdcd84e3ab1efcd5f7b188421e0}
+
+
+getter for Entity. \begin{Desc}
+\item[Returns:]m\_\-entity an Entity pointer. \end{Desc}
+\index{PVNode@{PVNode}!getName@{getName}}
+\index{getName@{getName}!PVNode@{PVNode}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const String\& PVNode::getName ()}\label{class_p_v_node_e4504c9d990dab7a5ae388c618d5becb}
+
+
+getter for PVnode name. \begin{Desc}
+\item[Returns:]name a string. \end{Desc}
+\index{PVNode@{PVNode}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!PVNode@{PVNode}}
+\subsubsection[{getVelocity}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 PVNode::getVelocity ()}\label{class_p_v_node_998e3f1a2319eff7b2273b0d35125d25}
+
+
+getter for PVnode velocity. \begin{Desc}
+\item[Returns:]m\_\-velocity a Vector3. \end{Desc}
+\index{PVNode@{PVNode}!getAcceleration@{getAcceleration}}
+\index{getAcceleration@{getAcceleration}!PVNode@{PVNode}}
+\subsubsection[{getAcceleration}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 PVNode::getAcceleration ()}\label{class_p_v_node_353bff245238eb8a9c2f113edbf62104}
+
+
+getter for PVnode acceleration. \begin{Desc}
+\item[Returns:]m\_\-acceleration a Vector3. \end{Desc}
+\index{PVNode@{PVNode}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!PVNode@{PVNode}}
+\subsubsection[{getPosition}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 PVNode::getPosition ()}\label{class_p_v_node_abc34042de0783c6b86084f2a2960edc}
+
+
+getter for PVnode position. \begin{Desc}
+\item[Returns:]m\_\-position a Vector3. \end{Desc}
+\index{PVNode@{PVNode}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!PVNode@{PVNode}}
+\subsubsection[{getOrientation}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 PVNode::getOrientation ()}\label{class_p_v_node_ae65e5bd2f9f46737b62ef516d1a36cf}
+
+
+getter for PVnode orietation. \begin{Desc}
+\item[Returns:]m\_\-orientation a Vector3. \end{Desc}
+\index{PVNode@{PVNode}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!PVNode@{PVNode}}
+\subsubsection[{getNormal}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 PVNode::getNormal ()}\label{class_p_v_node_cbd1e4f9c58205a8ad56d8ff9c855c25}
+
+
+getter for PVnode normal. \begin{Desc}
+\item[Returns:]m\_\-normal a Vector3. \end{Desc}
+\index{PVNode@{PVNode}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!PVNode@{PVNode}}
+\subsubsection[{setVelocity}]{\setlength{\rightskip}{0pt plus 5cm}void PVNode::setVelocity (const Vector3 \& {\em v})}\label{class_p_v_node_e19b5a9d0058c23fe0c54aadae0bbe97}
+
+
+setter for \doxyref{PVNode}{p.}{class_p_v_node} velocity. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&v}]a Vector3. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!setAcceleration@{setAcceleration}}
+\index{setAcceleration@{setAcceleration}!PVNode@{PVNode}}
+\subsubsection[{setAcceleration}]{\setlength{\rightskip}{0pt plus 5cm}void PVNode::setAcceleration (const Vector3 \& {\em a})}\label{class_p_v_node_457399ffb92a993b91893dcf0691e237}
+
+
+setter for \doxyref{PVNode}{p.}{class_p_v_node} acceleration. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&a}]a Vector3. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!PVNode@{PVNode}}
+\subsubsection[{setPosition}]{\setlength{\rightskip}{0pt plus 5cm}void PVNode::setPosition (const Vector3 \& {\em p})}\label{class_p_v_node_6e97653037d430ce5c9903c7f9d4ecdd}
+
+
+setter for \doxyref{PVNode}{p.}{class_p_v_node} position. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&p}]a Vector3. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!PVNode@{PVNode}}
+\subsubsection[{setOrientation}]{\setlength{\rightskip}{0pt plus 5cm}void PVNode::setOrientation (const Vector3 \& {\em o})}\label{class_p_v_node_74e5faa95f067945e728ad11c04bf31f}
+
+
+setter for \doxyref{PVNode}{p.}{class_p_v_node} orientation. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&o}]a Vector3. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!translateNode@{translateNode}}
+\index{translateNode@{translateNode}!PVNode@{PVNode}}
+\subsubsection[{translateNode}]{\setlength{\rightskip}{0pt plus 5cm}void PVNode::translateNode (Vector3 {\em trans})}\label{class_p_v_node_19695ff7c8e2783f7c7e50762d612741}
+
+
+translate a PVnode. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em trans}]a Vector3. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!rotateNode@{rotateNode}}
+\index{rotateNode@{rotateNode}!PVNode@{PVNode}}
+\subsubsection[{rotateNode}]{\setlength{\rightskip}{0pt plus 5cm}void PVNode::rotateNode (Direction {\em dir})}\label{class_p_v_node_e5d02f656efde63f5127f7b98561f9f2}
+
+
+rotates a PVnode in a direction. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dir}]a PVNode::Direction. \end{description}
+\end{Desc}
+\index{PVNode@{PVNode}!hasAcceleration@{hasAcceleration}}
+\index{hasAcceleration@{hasAcceleration}!PVNode@{PVNode}}
+\subsubsection[{hasAcceleration}]{\setlength{\rightskip}{0pt plus 5cm}bool PVNode::hasAcceleration ()}\label{class_p_v_node_ffd742f192b5080e10c8f5a250e02d5d}
+
+
+checks if \doxyref{PVNode}{p.}{class_p_v_node} has acceleration. 
+
+\begin{Desc}
+\item[Returns:]true if \doxyref{PVNode}{p.}{class_p_v_node} has an acceleration != 0. \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+PVNode.h\item 
+PVNode.cpp\end{CompactItemize}

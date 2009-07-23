@@ -131,7 +131,7 @@ void PVPhysics::collisionWithBall(PVNode *ball1, PVNode *ball2)
 
 }
 
-void PVPhysics::handleCollision(PVNode *fixedNode, PVNode *ball)
+void PVPhysics::handleCollision(PVNode *node, PVNode *ball)
 {
 	Vector3 normale = ball->getNormal();
 	Vector3 ballVelocity = ball->getVelocity();
@@ -145,7 +145,7 @@ void PVPhysics::handleCollision(PVNode *fixedNode, PVNode *ball)
 	ball->setVelocity(ballVelocity * DAMPING);
 }
 
-void PVPhysics::handleCollisionWithGround(PVNode * fixedNode, PVNode *ball)
+void PVPhysics::handleCollisionWithGround(PVNode * ground, PVNode *ball)
 {
 	Vector3 normale = Vector3(0.0, 1.0, 0.0);
 	Vector3 ballVelocity = ball->getVelocity();

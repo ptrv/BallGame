@@ -1,0 +1,138 @@
+\section{PVApplication Class Reference}
+\label{class_p_v_application}\index{PVApplication@{PVApplication}}
+Inherits {\bf ExampleApplication}.
+
+Collaboration diagram for PVApplication:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=44pt]{class_p_v_application__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf PVApplication} ()
+\item 
+{\bf $\sim$PVApplication} ()
+\item 
+void {\bf clearAllBalls} ()
+\item 
+void {\bf createBalls} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf m\_\-numberOfBalls}
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf createCamera} (void)
+\item 
+void {\bf createViewports} (void)
+\item 
+void {\bf createScene} (void)
+\item 
+void {\bf createFrameListener} (void)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+std::map$<$ std::string, {\bf PVNode} $\ast$ $>$ {\bf m\_\-objectMap}
+\item 
+std::vector$<$ {\bf PVNode} $\ast$ $>$ {\bf m\_\-balls}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{PVApplication@{PVApplication}!PVApplication@{PVApplication}}
+\index{PVApplication@{PVApplication}!PVApplication@{PVApplication}}
+\subsubsection[{PVApplication}]{\setlength{\rightskip}{0pt plus 5cm}PVApplication::PVApplication ()}\label{class_p_v_application_621fc385e12d3823366490cb93ebc9a9}
+
+
+Constructor. 
+
+\index{PVApplication@{PVApplication}!$\sim$PVApplication@{$\sim$PVApplication}}
+\index{$\sim$PVApplication@{$\sim$PVApplication}!PVApplication@{PVApplication}}
+\subsubsection[{$\sim$PVApplication}]{\setlength{\rightskip}{0pt plus 5cm}PVApplication::$\sim$PVApplication ()}\label{class_p_v_application_3d86091863293b76b98694cafc7d9591}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{PVApplication@{PVApplication}!clearAllBalls@{clearAllBalls}}
+\index{clearAllBalls@{clearAllBalls}!PVApplication@{PVApplication}}
+\subsubsection[{clearAllBalls}]{\setlength{\rightskip}{0pt plus 5cm}void PVApplication::clearAllBalls ()}\label{class_p_v_application_4e2bf04991d47db48f4b8ae7a7f261fc}
+
+
+funtkion for deleting all balls in the scene. 
+
+\index{PVApplication@{PVApplication}!createBalls@{createBalls}}
+\index{createBalls@{createBalls}!PVApplication@{PVApplication}}
+\subsubsection[{createBalls}]{\setlength{\rightskip}{0pt plus 5cm}void PVApplication::createBalls ()}\label{class_p_v_application_8fb729cf23610211b98f202d9334595f}
+
+
+creates a vector with balls. 
+
+\index{PVApplication@{PVApplication}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!PVApplication@{PVApplication}}
+\subsubsection[{createCamera}]{\setlength{\rightskip}{0pt plus 5cm}void PVApplication::createCamera (void)\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_application_81f6bb4306c063fd2fb2df9753c33d3a}
+
+
+Set camera settings. 
+
+\index{PVApplication@{PVApplication}!createViewports@{createViewports}}
+\index{createViewports@{createViewports}!PVApplication@{PVApplication}}
+\subsubsection[{createViewports}]{\setlength{\rightskip}{0pt plus 5cm}void PVApplication::createViewports (void)\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_application_c80a64cba5a004cf50b8373832a0571c}
+
+
+Set viewport settings. 
+
+\index{PVApplication@{PVApplication}!createScene@{createScene}}
+\index{createScene@{createScene}!PVApplication@{PVApplication}}
+\subsubsection[{createScene}]{\setlength{\rightskip}{0pt plus 5cm}void PVApplication::createScene (void)\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_application_d06164df52925a385a306e5b3bf9c68c}
+
+
+Create scene. 
+
+\index{PVApplication@{PVApplication}!createFrameListener@{createFrameListener}}
+\index{createFrameListener@{createFrameListener}!PVApplication@{PVApplication}}
+\subsubsection[{createFrameListener}]{\setlength{\rightskip}{0pt plus 5cm}void PVApplication::createFrameListener (void)\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_application_f3c0a1a5ba0863381dc566387d5cea14}
+
+
+Create Framelistener. 
+
+
+
+\subsection{Member Data Documentation}
+\index{PVApplication@{PVApplication}!m\_\-numberOfBalls@{m\_\-numberOfBalls}}
+\index{m\_\-numberOfBalls@{m\_\-numberOfBalls}!PVApplication@{PVApplication}}
+\subsubsection[{m\_\-numberOfBalls}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PVApplication::m\_\-numberOfBalls}}\label{class_p_v_application_a21695e21355042d06746c1b4dc921f8}
+
+
+max number of balls. 
+
+\index{PVApplication@{PVApplication}!m\_\-objectMap@{m\_\-objectMap}}
+\index{m\_\-objectMap@{m\_\-objectMap}!PVApplication@{PVApplication}}
+\subsubsection[{m\_\-objectMap}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$std::string, {\bf PVNode}$\ast$$>$ {\bf PVApplication::m\_\-objectMap}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_application_391465236459221a65ba4361fa306db3}
+
+
+map with scene objects. 
+
+\index{PVApplication@{PVApplication}!m\_\-balls@{m\_\-balls}}
+\index{m\_\-balls@{m\_\-balls}!PVApplication@{PVApplication}}
+\subsubsection[{m\_\-balls}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf PVNode}$\ast$$>$ {\bf PVApplication::m\_\-balls}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_application_80794ff58204fb039f2aa58ed0d157a1}
+
+
+vector with balls. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+BallApp.h\item 
+BallApp.cpp\item 
+main.cpp\end{CompactItemize}

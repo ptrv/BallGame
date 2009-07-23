@@ -1,0 +1,149 @@
+\section{PVFrameListener Class Reference}
+\label{class_p_v_frame_listener}\index{PVFrameListener@{PVFrameListener}}
+Inherits {\bf ExampleFrameListener}, and {\bf OIS::KeyListener}.
+
+Collaboration diagram for PVFrameListener:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=44pt]{class_p_v_frame_listener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf PVFrameListener} (RenderWindow $\ast$win, Camera $\ast$cam, SceneManager $\ast$sceneMgr, std::map$<$ std::string, {\bf PVNode} $\ast$ $>$ \&objectMap, std::vector$<$ {\bf PVNode} $\ast$ $>$ \&balls, {\bf PVApplication} $\ast$app)
+\item 
+bool {\bf frameStarted} (const FrameEvent \&evt)
+\item 
+bool {\bf keyPressed} (const OIS::KeyEvent \&arg)
+\item 
+bool {\bf keyReleased} (const OIS::KeyEvent \&arg)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+bool {\bf mMouseDownBool}
+\item 
+Real {\bf mToggle}
+\item 
+Real {\bf mRotate}
+\item 
+Real {\bf mMove}
+\item 
+SceneManager $\ast$ {\bf mSceneMgr}
+\item 
+SceneNode $\ast$ {\bf mCamNode}
+\item 
+bool {\bf mContinue}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{PVFrameListener@{PVFrameListener}!PVFrameListener@{PVFrameListener}}
+\index{PVFrameListener@{PVFrameListener}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{PVFrameListener}]{\setlength{\rightskip}{0pt plus 5cm}PVFrameListener::PVFrameListener (RenderWindow $\ast$ {\em win}, \/  Camera $\ast$ {\em cam}, \/  SceneManager $\ast$ {\em sceneMgr}, \/  std::map$<$ std::string, {\bf PVNode} $\ast$ $>$ \& {\em objectMap}, \/  std::vector$<$ {\bf PVNode} $\ast$ $>$ \& {\em balls}, \/  {\bf PVApplication} $\ast$ {\em app})}\label{class_p_v_frame_listener_c9505ee626a8e6dccf582f909c988857}
+
+
+Constructor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em win}]the window for rendering. \item[{\em sceneMgr}]the scene manager. \item[{\em objectMap}]a map with PVNodes. \item[{\em app}]an instance of \doxyref{PVApplication}{p.}{class_p_v_application}. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{PVFrameListener@{PVFrameListener}!frameStarted@{frameStarted}}
+\index{frameStarted@{frameStarted}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{frameStarted}]{\setlength{\rightskip}{0pt plus 5cm}bool PVFrameListener::frameStarted (const FrameEvent \& {\em evt})}\label{class_p_v_frame_listener_aa60d3ba4840a661c598914a4134af56}
+
+
+Ogre callback funktion for simulation. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&evt}]an event. \end{description}
+\end{Desc}
+\index{PVFrameListener@{PVFrameListener}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{keyPressed}]{\setlength{\rightskip}{0pt plus 5cm}bool PVFrameListener::keyPressed (const OIS::KeyEvent \& {\em arg})}\label{class_p_v_frame_listener_af53be6906b2b74c293a57b7a3f7254b}
+
+
+callback funktion for pressing key. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&arg}]a key event. \end{description}
+\end{Desc}
+\index{PVFrameListener@{PVFrameListener}!keyReleased@{keyReleased}}
+\index{keyReleased@{keyReleased}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{keyReleased}]{\setlength{\rightskip}{0pt plus 5cm}bool PVFrameListener::keyReleased (const OIS::KeyEvent \& {\em arg})}\label{class_p_v_frame_listener_63896b4b8aed99c89e0bb54a33db7411}
+
+
+callback funktion for releasing a key. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&arg}]a key event. \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{PVFrameListener@{PVFrameListener}!mMouseDownBool@{mMouseDownBool}}
+\index{mMouseDownBool@{mMouseDownBool}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mMouseDownBool}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf PVFrameListener::mMouseDownBool}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_41f96e4117faec7561bee96517203dff}
+
+
+Whether or not the left mouse button was down last frame. 
+
+\index{PVFrameListener@{PVFrameListener}!mToggle@{mToggle}}
+\index{mToggle@{mToggle}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mToggle}]{\setlength{\rightskip}{0pt plus 5cm}Real {\bf PVFrameListener::mToggle}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_81242d0a61756621f5eaf6259e25e8d9}
+
+
+The time left until next toggle. 
+
+\index{PVFrameListener@{PVFrameListener}!mRotate@{mRotate}}
+\index{mRotate@{mRotate}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mRotate}]{\setlength{\rightskip}{0pt plus 5cm}Real {\bf PVFrameListener::mRotate}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_433d7a46809228e5c37086e5590b54b0}
+
+
+The rotate constant. 
+
+\index{PVFrameListener@{PVFrameListener}!mMove@{mMove}}
+\index{mMove@{mMove}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mMove}]{\setlength{\rightskip}{0pt plus 5cm}Real {\bf PVFrameListener::mMove}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_408e19582e839e8578e5f15b430a6fa4}
+
+
+The movement constant. 
+
+\index{PVFrameListener@{PVFrameListener}!mSceneMgr@{mSceneMgr}}
+\index{mSceneMgr@{mSceneMgr}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mSceneMgr}]{\setlength{\rightskip}{0pt plus 5cm}SceneManager$\ast$ {\bf PVFrameListener::mSceneMgr}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_8cd3d9e70c8495b2b2d90ca1b16f39cc}
+
+
+The current SceneManager. 
+
+\index{PVFrameListener@{PVFrameListener}!mCamNode@{mCamNode}}
+\index{mCamNode@{mCamNode}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mCamNode}]{\setlength{\rightskip}{0pt plus 5cm}SceneNode$\ast$ {\bf PVFrameListener::mCamNode}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_c0e9f972099daf74487771d11e9ae4fb}
+
+
+The SceneNode the camera is currently attached to. 
+
+\index{PVFrameListener@{PVFrameListener}!mContinue@{mContinue}}
+\index{mContinue@{mContinue}!PVFrameListener@{PVFrameListener}}
+\subsubsection[{mContinue}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf PVFrameListener::mContinue}\hspace{0.3cm}{\tt  [protected]}}\label{class_p_v_frame_listener_805213a0cd7429b3b7b238c61d2e03b2}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+BallApp.h\item 
+main.cpp\end{CompactItemize}
