@@ -30,18 +30,18 @@ public:
 					std::vector<PVNode*>& balls, PVApplication *app );
 
 	/**
-	 * \brief Ogre callback funktion for simulation.
+	 * \brief Ogre callback function for simulation.
 	 *
 	 * \param &evt an event.
 	 */
 	bool frameStarted(const FrameEvent &evt);
 	/**
-	 * \brief callback funktion for pressing key.
+	 * \brief callback function for pressing key.
 	 * \param &arg a key event.
 	 */
 	bool keyPressed( const OIS::KeyEvent &arg );
 	/**
-	 * \brief callback funktion for releasing a key.
+	 * \brief callback function for releasing a key.
 	 * \param &arg a key event.
 	 */
 	bool keyReleased( const OIS::KeyEvent &arg );  
@@ -91,7 +91,7 @@ class PVApplication : public ExampleApplication
 		~PVApplication();
 		/// max number of balls.
 		int m_numberOfBalls;
-		/// funtkion for deleting all balls in the scene.
+		/// function for deleting all balls in the scene.
 		void clearAllBalls();
 		/// creates a vector with balls. 
 		void createBalls();
