@@ -25,7 +25,7 @@ class PVPhysics
 		/**
 		 * \brief simulate function which calls move function and collision detection.
 		 * \param objectMap map with objects.
-		 * \param numberOfFlyingBalls current sooted balls.
+		 * \param numberOfFlyingBalls current shooted balls.
 		 * \param time delta time elapsed since last frame in seconds.
 		 */
 		void simulate(std::map<std::string, PVNode*>& objectMap, 
