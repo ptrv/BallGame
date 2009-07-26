@@ -73,15 +73,18 @@ private:
 	/// Ball shooting factor for multiplying with start velocity of a ball.
 	float m_shootingSpeedFactor;
 	/**
-	 * \brief funktion for shooting balls out of cannon
+	 * \brief funktion for shooting balls out of cannon.
 	 *
 	 */
 	void shootBall();
-	
+	/**
+	 * \brief function for shooting balls automatically.
+	 * \param t a float for time interval.
+	 */
 	void shootBallsAuto(float t);
-	
+	/// a float for last messured time.
 	float lastT;
-	
+	/// bool for state of automatic ball shooting. 
 	bool autoShoot;
 	/// An instance of PVApplication
 	PVApplication *m_app;

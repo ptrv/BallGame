@@ -1,11 +1,11 @@
 digraph G
 {
-  edge [fontname="FreeSans",fontsize="4",labelfontname="FreeSans",labelfontsize="4"];
-  node [fontname="FreeSans",fontsize="4",shape=record];
+  edge [fontname="FreeSans",fontsize="12",labelfontname="FreeSans",labelfontsize="12"];
+  node [fontname="FreeSans",fontsize="12",shape=record];
   rankdir=LR;
   Node1 [label="ExampleFrameListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_example_frame_listener.html"];
-  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="4",style="solid",fontname="FreeSans"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="12",style="solid",fontname="FreeSans"];
   Node2 [label="PVFrameListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_v_frame_listener.html"];
   Node3 [label="KeyListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_i_s_1_1_key_listener.html"];
-  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="4",style="solid",fontname="FreeSans"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="12",style="solid",fontname="FreeSans"];
 }

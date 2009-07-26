@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>BallApp.h Source File</title>
+<title>BallGame: BallApp.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -93,51 +93,54 @@
 <a name="l00073"></a>00073 <span class="comment"> /// Ball shooting factor for multiplying with start velocity of a ball.</span>
 <a name="l00074"></a>00074 <span class="comment"></span> <span class="keywordtype">float</span> m_shootingSpeedFactor;<span class="comment"></span>
 <a name="l00075"></a>00075 <span class="comment"> /**</span>
-<a name="l00076"></a>00076 <span class="comment">  * \brief funktion for shooting balls out of cannon</span>
+<a name="l00076"></a>00076 <span class="comment">  * \brief funktion for shooting balls out of cannon.</span>
 <a name="l00077"></a>00077 <span class="comment">  *</span>
 <a name="l00078"></a>00078 <span class="comment">  */</span>
-<a name="l00079"></a>00079  <span class="keywordtype">void</span> shootBall();
-<a name="l00080"></a>00080  
-<a name="l00081"></a>00081  <span class="keywordtype">void</span> shootBallsAuto(<span class="keywordtype">float</span> t);
-<a name="l00082"></a>00082  
-<a name="l00083"></a>00083  <span class="keywordtype">float</span> lastT;
-<a name="l00084"></a>00084  
-<a name="l00085"></a>00085  <span class="keywordtype">bool</span> autoShoot;<span class="comment"></span>
-<a name="l00086"></a>00086 <span class="comment"> /// An instance of PVApplication</span>
-<a name="l00087"></a>00087 <span class="comment"></span> <a class="code" href="class_p_v_application.html">PVApplication</a> *m_app;
-<a name="l00088"></a>00088 };
-<a name="l00089"></a>00089 
-<a name="l00090"></a><a class="code" href="class_p_v_application.html">00090</a> <span class="keyword">class </span><a class="code" href="class_p_v_application.html">PVApplication</a> : <span class="keyword">public</span> <a class="code" href="class_example_application.html">ExampleApplication</a>
-<a name="l00091"></a>00091  {
-<a name="l00092"></a>00092  <span class="keyword">public</span>:<span class="comment"></span>
-<a name="l00093"></a>00093 <span class="comment">  /// Constructor</span>
-<a name="l00094"></a>00094 <span class="comment"></span>  <a class="code" href="class_p_v_application.html#621fc385e12d3823366490cb93ebc9a9" title="Constructor.">PVApplication</a>();<span class="comment"></span>
-<a name="l00095"></a>00095 <span class="comment">  /// Destructor</span>
-<a name="l00096"></a>00096 <span class="comment"></span>  <a class="code" href="class_p_v_application.html#3d86091863293b76b98694cafc7d9591" title="Destructor.">~PVApplication</a>();<span class="comment"></span>
-<a name="l00097"></a>00097 <span class="comment">  /// max number of balls.</span>
-<a name="l00098"></a><a class="code" href="class_p_v_application.html#a21695e21355042d06746c1b4dc921f8">00098</a> <span class="comment"></span>  <span class="keywordtype">int</span> <a class="code" href="class_p_v_application.html#a21695e21355042d06746c1b4dc921f8" title="max number of balls.">m_numberOfBalls</a>;<span class="comment"></span>
-<a name="l00099"></a>00099 <span class="comment">  /// function for deleting all balls in the scene.</span>
-<a name="l00100"></a>00100 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#4e2bf04991d47db48f4b8ae7a7f261fc" title="function for deleting all balls in the scene.">clearAllBalls</a>();<span class="comment"></span>
-<a name="l00101"></a>00101 <span class="comment">  /// creates a vector with balls. </span>
-<a name="l00102"></a>00102 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#8fb729cf23610211b98f202d9334595f" title="creates a vector with balls.">createBalls</a>();
-<a name="l00103"></a>00103  <span class="keyword">protected</span>:<span class="comment"></span>
-<a name="l00104"></a>00104 <span class="comment">  /// Set camera settings.</span>
-<a name="l00105"></a>00105 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#81f6bb4306c063fd2fb2df9753c33d3a" title="Set camera settings.">createCamera</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
-<a name="l00106"></a>00106 <span class="comment">  /// Set viewport settings.</span>
-<a name="l00107"></a>00107 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#c80a64cba5a004cf50b8373832a0571c" title="Set viewport settings.">createViewports</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
-<a name="l00108"></a>00108 <span class="comment">  /// Create scene</span>
-<a name="l00109"></a>00109 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#d06164df52925a385a306e5b3bf9c68c" title="Create scene.">createScene</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
-<a name="l00110"></a>00110 <span class="comment">  /// Create Framelistener</span>
-<a name="l00111"></a>00111 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#f3c0a1a5ba0863381dc566387d5cea14" title="Create Framelistener.">createFrameListener</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
-<a name="l00112"></a>00112 <span class="comment">  /// map with scene objects.</span>
-<a name="l00113"></a><a class="code" href="class_p_v_application.html#391465236459221a65ba4361fa306db3">00113</a> <span class="comment"></span>  std::map&lt;std::string, PVNode*&gt; <a class="code" href="class_p_v_application.html#391465236459221a65ba4361fa306db3" title="map with scene objects.">m_objectMap</a>;<span class="comment"></span>
-<a name="l00114"></a>00114 <span class="comment">  /// vector with balls.</span>
-<a name="l00115"></a><a class="code" href="class_p_v_application.html#80794ff58204fb039f2aa58ed0d157a1">00115</a> <span class="comment"></span>  std::vector&lt;PVNode*&gt; <a class="code" href="class_p_v_application.html#80794ff58204fb039f2aa58ed0d157a1" title="vector with balls.">m_balls</a>;
-<a name="l00116"></a>00116  };
-<a name="l00117"></a>00117 
-<a name="l00118"></a>00118 <span class="preprocessor">#endif // _PVAPPLICATION_H_#endif //_BALLAPP_H_</span>
+<a name="l00079"></a>00079  <span class="keywordtype">void</span> shootBall();<span class="comment"></span>
+<a name="l00080"></a>00080 <span class="comment"> /**</span>
+<a name="l00081"></a>00081 <span class="comment">  * \brief function for shooting balls automatically.</span>
+<a name="l00082"></a>00082 <span class="comment">  * \param t a float for time interval.</span>
+<a name="l00083"></a>00083 <span class="comment">  */</span>
+<a name="l00084"></a>00084  <span class="keywordtype">void</span> shootBallsAuto(<span class="keywordtype">float</span> t);<span class="comment"></span>
+<a name="l00085"></a>00085 <span class="comment"> /// a float for last messured time.</span>
+<a name="l00086"></a>00086 <span class="comment"></span> <span class="keywordtype">float</span> lastT;<span class="comment"></span>
+<a name="l00087"></a>00087 <span class="comment"> /// bool for state of automatic ball shooting. </span>
+<a name="l00088"></a>00088 <span class="comment"></span> <span class="keywordtype">bool</span> autoShoot;<span class="comment"></span>
+<a name="l00089"></a>00089 <span class="comment"> /// An instance of PVApplication</span>
+<a name="l00090"></a>00090 <span class="comment"></span> <a class="code" href="class_p_v_application.html">PVApplication</a> *m_app;
+<a name="l00091"></a>00091 };
+<a name="l00092"></a>00092 
+<a name="l00093"></a><a class="code" href="class_p_v_application.html">00093</a> <span class="keyword">class </span><a class="code" href="class_p_v_application.html">PVApplication</a> : <span class="keyword">public</span> <a class="code" href="class_example_application.html">ExampleApplication</a>
+<a name="l00094"></a>00094  {
+<a name="l00095"></a>00095  <span class="keyword">public</span>:<span class="comment"></span>
+<a name="l00096"></a>00096 <span class="comment">  /// Constructor</span>
+<a name="l00097"></a>00097 <span class="comment"></span>  <a class="code" href="class_p_v_application.html#621fc385e12d3823366490cb93ebc9a9" title="Constructor.">PVApplication</a>();<span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">  /// Destructor</span>
+<a name="l00099"></a>00099 <span class="comment"></span>  <a class="code" href="class_p_v_application.html#3d86091863293b76b98694cafc7d9591" title="Destructor.">~PVApplication</a>();<span class="comment"></span>
+<a name="l00100"></a>00100 <span class="comment">  /// max number of balls.</span>
+<a name="l00101"></a><a class="code" href="class_p_v_application.html#a21695e21355042d06746c1b4dc921f8">00101</a> <span class="comment"></span>  <span class="keywordtype">int</span> <a class="code" href="class_p_v_application.html#a21695e21355042d06746c1b4dc921f8" title="max number of balls.">m_numberOfBalls</a>;<span class="comment"></span>
+<a name="l00102"></a>00102 <span class="comment">  /// function for deleting all balls in the scene.</span>
+<a name="l00103"></a>00103 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#4e2bf04991d47db48f4b8ae7a7f261fc" title="function for deleting all balls in the scene.">clearAllBalls</a>();<span class="comment"></span>
+<a name="l00104"></a>00104 <span class="comment">  /// creates a vector with balls. </span>
+<a name="l00105"></a>00105 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#8fb729cf23610211b98f202d9334595f" title="creates a vector with balls.">createBalls</a>();
+<a name="l00106"></a>00106  <span class="keyword">protected</span>:<span class="comment"></span>
+<a name="l00107"></a>00107 <span class="comment">  /// Set camera settings.</span>
+<a name="l00108"></a>00108 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#81f6bb4306c063fd2fb2df9753c33d3a" title="Set camera settings.">createCamera</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
+<a name="l00109"></a>00109 <span class="comment">  /// Set viewport settings.</span>
+<a name="l00110"></a>00110 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#c80a64cba5a004cf50b8373832a0571c" title="Set viewport settings.">createViewports</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
+<a name="l00111"></a>00111 <span class="comment">  /// Create scene</span>
+<a name="l00112"></a>00112 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#d06164df52925a385a306e5b3bf9c68c" title="Create scene.">createScene</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
+<a name="l00113"></a>00113 <span class="comment">  /// Create Framelistener</span>
+<a name="l00114"></a>00114 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_p_v_application.html#f3c0a1a5ba0863381dc566387d5cea14" title="Create Framelistener.">createFrameListener</a>(<span class="keywordtype">void</span>);<span class="comment"></span>
+<a name="l00115"></a>00115 <span class="comment">  /// map with scene objects.</span>
+<a name="l00116"></a><a class="code" href="class_p_v_application.html#391465236459221a65ba4361fa306db3">00116</a> <span class="comment"></span>  std::map&lt;std::string, PVNode*&gt; <a class="code" href="class_p_v_application.html#391465236459221a65ba4361fa306db3" title="map with scene objects.">m_objectMap</a>;<span class="comment"></span>
+<a name="l00117"></a>00117 <span class="comment">  /// vector with balls.</span>
+<a name="l00118"></a><a class="code" href="class_p_v_application.html#80794ff58204fb039f2aa58ed0d157a1">00118</a> <span class="comment"></span>  std::vector&lt;PVNode*&gt; <a class="code" href="class_p_v_application.html#80794ff58204fb039f2aa58ed0d157a1" title="vector with balls.">m_balls</a>;
+<a name="l00119"></a>00119  };
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 <span class="preprocessor">#endif // _PVAPPLICATION_H_#endif //_BALLAPP_H_</span>
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Thu Jul 23 22:41:38 2009 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jul 26 18:16:20 2009 for BallGame by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
 </body>
