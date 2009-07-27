@@ -59,12 +59,6 @@ class PVPhysics
 		 */
 		void collisionWithWall(PVNode *wall, PVNode *ball);
 		/**
-		 * \brief detects collision between arena and a ball.
-		 * \param *kanone scene node
-		 * \param *ball
-		 */
-		void collisionWithCannon(PVNode *kanone, PVNode *ball);
-		/**
 		 * \brief detects collisionbetween balls.
 		 * \param *ball1 scene node.
 		 * \param *ball2

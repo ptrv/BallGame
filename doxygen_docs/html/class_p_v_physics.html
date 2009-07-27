@@ -38,7 +38,6 @@ Collaboration diagram for PVPhysics:</div>
 <li>void <a class="el" href="class_p_v_physics.html#e56c458a7f62c983e2ab5f903bee9478">collisionDetection</a> (std::map&lt; std::string, <a class="el" href="class_p_v_node.html">PVNode</a> * &gt; &amp;objectMap, std::vector&lt; <a class="el" href="class_p_v_node.html">PVNode</a> * &gt; &amp;balls, int numberOfFlyingBalls)
 <li>void <a class="el" href="class_p_v_physics.html#35f87bc90c8aae2772d79523bcb4bf77">collisionWithArena</a> (<a class="el" href="class_p_v_node.html">PVNode</a> *arena, <a class="el" href="class_p_v_node.html">PVNode</a> *ball)
 <li>void <a class="el" href="class_p_v_physics.html#7e07bd0171a431a2ccf4e542348d0820">collisionWithWall</a> (<a class="el" href="class_p_v_node.html">PVNode</a> *wall, <a class="el" href="class_p_v_node.html">PVNode</a> *ball)
-<li>void <a class="el" href="class_p_v_physics.html#967d8b19b11aef754591e6d9336ecfbe">collisionWithCannon</a> (<a class="el" href="class_p_v_node.html">PVNode</a> *kanone, <a class="el" href="class_p_v_node.html">PVNode</a> *ball)
 <li>void <a class="el" href="class_p_v_physics.html#d55e28ab26fc818faf43231a3368294c">collisionWithBall</a> (<a class="el" href="class_p_v_node.html">PVNode</a> *ball1, <a class="el" href="class_p_v_node.html">PVNode</a> *ball2)
 <li>void <a class="el" href="class_p_v_physics.html#2e69d5b10735bec201d92e9206e618cb">collisionWithPillar</a> (<a class="el" href="class_p_v_node.html">PVNode</a> *pillar, <a class="el" href="class_p_v_node.html">PVNode</a> *ball)
 <li>void <a class="el" href="class_p_v_physics.html#43833f09fa8abc6114290d9161d14bb5">handleCollision</a> (<a class="el" href="class_p_v_node.html">PVNode</a> *node, <a class="el" href="class_p_v_node.html">PVNode</a> *ball)
@@ -183,7 +182,7 @@ function for shooting a ball.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00030">30</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00029">29</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -228,7 +227,7 @@ function for calling the particular collision detection function for each node t
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00047">47</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00046">46</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -267,7 +266,7 @@ detects collision between arena and a ball.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00070">70</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00068">68</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -306,46 +305,7 @@ detects collision between wall and a ball.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00098">98</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
-
-</div>
-</div><p>
-<a class="anchor" name="967d8b19b11aef754591e6d9336ecfbe"></a><!-- doxytag: member="PVPhysics::collisionWithCannon" ref="967d8b19b11aef754591e6d9336ecfbe" args="(PVNode *kanone, PVNode *ball)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PVPhysics::collisionWithCannon           </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_p_v_node.html">PVNode</a> *&nbsp;</td>
-          <td class="paramname"> <em>kanone</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_p_v_node.html">PVNode</a> *&nbsp;</td>
-          <td class="paramname"> <em>ball</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-detects collision between arena and a ball. 
-<p>
-<dl compact><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>*kanone</em>&nbsp;</td><td>scene node </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>*ball</em>&nbsp;</td><td></td></tr>
-  </table>
-</dl>
-
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00117">117</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00093">93</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -384,7 +344,7 @@ detects collisionbetween balls.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00121">121</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00113">113</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -423,7 +383,7 @@ detects collisionbetween pillar and a ball.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00181">181</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00168">168</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -462,7 +422,7 @@ handles collision between a ball and a scene node.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00133">133</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00125">125</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -501,7 +461,7 @@ handles collision between ground and a ball.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00147">147</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00138">138</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
@@ -540,14 +500,14 @@ handles collision between balls.
   </table>
 </dl>
 
-<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00162">162</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_physics_8cpp_source.html#l00151">151</a> of file <a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a>.</p>
 
 </div>
 </div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_p_v_physics_8h_source.html">PVPhysics.h</a><li><a class="el" href="_p_v_physics_8cpp_source.html">PVPhysics.cpp</a></ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jul 26 18:16:20 2009 for BallGame by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Mon Jul 27 19:56:54 2009 for BallGame by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
 </body>

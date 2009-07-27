@@ -23,7 +23,6 @@ void PVPhysics::simulate(std::map<std::string, PVNode*>& objectMap, std::vector<
 		move(balls.at(i), time);
 		//std::cout << time << std::endl;
 	}
-	
 	collisionDetection(objectMap, balls, numberOfFlyingBalls);
 }
 
@@ -56,7 +55,6 @@ void PVPhysics::collisionDetection(std::map<std::string, PVNode*>& objectMap, st
 	for (unsigned int i = 0; i <= numberOfFlyingBalls; ++i) {
 		collisionWithArena(itArena->second, balls.at(i));
 		collisionWithWall(itWall->second, balls.at(i));
-		collisionWithCannon(itCannon->second, balls.at(i));
 		collisionWithPillar(itP1->second, balls.at(i));
 		collisionWithPillar(itP2->second, balls.at(i));
 		for( int j = (i+1); j <= numberOfFlyingBalls; j++ )
@@ -81,9 +79,6 @@ void PVPhysics::collisionWithArena(PVNode *arena, PVNode *ball)
 	
 	if (ballPosition.length() > (arenaRadius - toleranz)) 
 	{
-//		std::cout << "arenaRadius = " << arenaRadius-toleranz<<std::endl;
-//		std::cout << "ballPosition.length = " << ballPosition.length()<<std::endl;
-
 		handleCollision(arena, ball);
 		return;
 	}
@@ -114,9 +109,6 @@ void PVPhysics::collisionWithWall(PVNode *wall, PVNode *ball)
 	}
 }
 
-void PVPhysics::collisionWithCannon(PVNode *kanone, PVNode *ball)
-{
-}
 
 void PVPhysics::collisionWithBall(PVNode *ball1, PVNode *ball2)
 {
@@ -138,8 +130,7 @@ void PVPhysics::handleCollision(PVNode *node, PVNode *ball)
 	ballVelocity = ballVelocity.reflect(normale);
 	
 	Vector3 normalizedVelocity = ballVelocity.normalisedCopy();
-	//float length = ball->getSceneNode()->_getWorldAABB().getSize().length();
-	ball->setPosition(ball->getPosition() + normalizedVelocity);// * length);
+	ball->setPosition(ball->getPosition() + normalizedVelocity);
 
 	ball->setVelocity(ballVelocity * DAMPING);
 }
@@ -152,20 +143,16 @@ void PVPhysics::handleCollisionWithGround(PVNode * ground, PVNode *ball)
 	ballVelocity = ballVelocity.reflect(normale);
 	
 	Vector3 normalizedVelocity = ballVelocity.normalisedCopy();
-	//float length = ball->getSceneNode()->_getWorldAABB().getSize().length();
-	ball->setPosition(ball->getPosition() + normalizedVelocity);// * length);
+	ball->setPosition(ball->getPosition() + normalizedVelocity);
 	
-	//ball->setPosition(ball->getPosition() + ballVelocity);// * length);
 	ball->setVelocity(ballVelocity * DAMPING);
 }
 
 void PVPhysics::handleCollisionWithBall(PVNode *ball1, PVNode *ball2)
 {
-	//zwei bälle, gleiche behandlung jeweils
 	Vector3 velocityBall1 = ball1->getVelocity();
 	Vector3 velocityBall2 = ball2->getVelocity();
 	
-	//bälle reflektieren um die velocity des anderen (getrickst: velocity als normale)
 	velocityBall1 = velocityBall1.reflect(velocityBall2.normalisedCopy());
 	velocityBall2 = velocityBall2.reflect(ball1->getVelocity().normalisedCopy());
 	

@@ -79,50 +79,44 @@
 <a name="l00059"></a>00059 <span class="comment">   */</span>
 <a name="l00060"></a>00060   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#7e07bd0171a431a2ccf4e542348d0820" title="detects collision between wall and a ball.">collisionWithWall</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *wall, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);<span class="comment"></span>
 <a name="l00061"></a>00061 <span class="comment">  /**</span>
-<a name="l00062"></a>00062 <span class="comment">   * \brief detects collision between arena and a ball.</span>
-<a name="l00063"></a>00063 <span class="comment">   * \param *kanone scene node</span>
-<a name="l00064"></a>00064 <span class="comment">   * \param *ball</span>
+<a name="l00062"></a>00062 <span class="comment">   * \brief detects collisionbetween balls.</span>
+<a name="l00063"></a>00063 <span class="comment">   * \param *ball1 scene node.</span>
+<a name="l00064"></a>00064 <span class="comment">   * \param *ball2</span>
 <a name="l00065"></a>00065 <span class="comment">   */</span>
-<a name="l00066"></a>00066   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#967d8b19b11aef754591e6d9336ecfbe" title="detects collision between arena and a ball.">collisionWithCannon</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *kanone, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);<span class="comment"></span>
+<a name="l00066"></a>00066   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#d55e28ab26fc818faf43231a3368294c" title="detects collisionbetween balls.">collisionWithBall</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *ball1, <a class="code" href="class_p_v_node.html">PVNode</a> *ball2);<span class="comment"></span>
 <a name="l00067"></a>00067 <span class="comment">  /**</span>
-<a name="l00068"></a>00068 <span class="comment">   * \brief detects collisionbetween balls.</span>
-<a name="l00069"></a>00069 <span class="comment">   * \param *ball1 scene node.</span>
-<a name="l00070"></a>00070 <span class="comment">   * \param *ball2</span>
+<a name="l00068"></a>00068 <span class="comment">   * \brief detects collisionbetween pillar and a ball.</span>
+<a name="l00069"></a>00069 <span class="comment">   * \param *pillar scene node.</span>
+<a name="l00070"></a>00070 <span class="comment">   * \param *ball</span>
 <a name="l00071"></a>00071 <span class="comment">   */</span>
-<a name="l00072"></a>00072   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#d55e28ab26fc818faf43231a3368294c" title="detects collisionbetween balls.">collisionWithBall</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *ball1, <a class="code" href="class_p_v_node.html">PVNode</a> *ball2);<span class="comment"></span>
-<a name="l00073"></a>00073 <span class="comment">  /**</span>
-<a name="l00074"></a>00074 <span class="comment">   * \brief detects collisionbetween pillar and a ball.</span>
-<a name="l00075"></a>00075 <span class="comment">   * \param *pillar scene node.</span>
-<a name="l00076"></a>00076 <span class="comment">   * \param *ball</span>
-<a name="l00077"></a>00077 <span class="comment">   */</span>
-<a name="l00078"></a>00078   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#2e69d5b10735bec201d92e9206e618cb" title="detects collisionbetween pillar and a ball.">collisionWithPillar</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *pillar, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);
-<a name="l00079"></a>00079   <span class="comment"></span>
+<a name="l00072"></a>00072   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#2e69d5b10735bec201d92e9206e618cb" title="detects collisionbetween pillar and a ball.">collisionWithPillar</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *pillar, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);
+<a name="l00073"></a>00073   <span class="comment"></span>
+<a name="l00074"></a>00074 <span class="comment">  /**</span>
+<a name="l00075"></a>00075 <span class="comment">   * \brief handles collision between a ball and a scene node.</span>
+<a name="l00076"></a>00076 <span class="comment">   * \param node a scene node.</span>
+<a name="l00077"></a>00077 <span class="comment">   * \param ball a ball.</span>
+<a name="l00078"></a>00078 <span class="comment">   */</span>
+<a name="l00079"></a>00079   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#43833f09fa8abc6114290d9161d14bb5" title="handles collision between a ball and a scene node.">handleCollision</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *node, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);<span class="comment"></span>
 <a name="l00080"></a>00080 <span class="comment">  /**</span>
-<a name="l00081"></a>00081 <span class="comment">   * \brief handles collision between a ball and a scene node.</span>
-<a name="l00082"></a>00082 <span class="comment">   * \param node a scene node.</span>
+<a name="l00081"></a>00081 <span class="comment">   * \brief handles collision between ground and a ball.</span>
+<a name="l00082"></a>00082 <span class="comment">   * \param ground a scene node.</span>
 <a name="l00083"></a>00083 <span class="comment">   * \param ball a ball.</span>
 <a name="l00084"></a>00084 <span class="comment">   */</span>
-<a name="l00085"></a>00085   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#43833f09fa8abc6114290d9161d14bb5" title="handles collision between a ball and a scene node.">handleCollision</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *node, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);<span class="comment"></span>
+<a name="l00085"></a>00085   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#5c037709dbad69c82c4fa0437a0f6c69" title="handles collision between ground and a ball.">handleCollisionWithGround</a>(<a class="code" href="class_p_v_node.html">PVNode</a> * ground, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);<span class="comment"></span>
 <a name="l00086"></a>00086 <span class="comment">  /**</span>
-<a name="l00087"></a>00087 <span class="comment">   * \brief handles collision between ground and a ball.</span>
-<a name="l00088"></a>00088 <span class="comment">   * \param ground a scene node.</span>
-<a name="l00089"></a>00089 <span class="comment">   * \param ball a ball.</span>
+<a name="l00087"></a>00087 <span class="comment">   * \brief handles collision between balls.</span>
+<a name="l00088"></a>00088 <span class="comment">   * \param ball1 first ball.</span>
+<a name="l00089"></a>00089 <span class="comment">   * \param ball2 second ball.</span>
 <a name="l00090"></a>00090 <span class="comment">   */</span>
-<a name="l00091"></a>00091   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#5c037709dbad69c82c4fa0437a0f6c69" title="handles collision between ground and a ball.">handleCollisionWithGround</a>(<a class="code" href="class_p_v_node.html">PVNode</a> * ground, <a class="code" href="class_p_v_node.html">PVNode</a> *ball);<span class="comment"></span>
-<a name="l00092"></a>00092 <span class="comment">  /**</span>
-<a name="l00093"></a>00093 <span class="comment">   * \brief handles collision between balls.</span>
-<a name="l00094"></a>00094 <span class="comment">   * \param ball1 first ball.</span>
-<a name="l00095"></a>00095 <span class="comment">   * \param ball2 second ball.</span>
-<a name="l00096"></a>00096 <span class="comment">   */</span>
-<a name="l00097"></a>00097   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#b33b7fee9e0d4eada11603880f2d4a40" title="handles collision between balls.">handleCollisionWithBall</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *ball1, <a class="code" href="class_p_v_node.html">PVNode</a> *ball2);
-<a name="l00098"></a>00098     
-<a name="l00099"></a>00099  <span class="keyword">private</span>:
-<a name="l00100"></a>00100   
-<a name="l00101"></a>00101  };
-<a name="l00102"></a>00102 
-<a name="l00103"></a>00103 <span class="preprocessor">#endif // _PVPHYSICS_H_</span>
+<a name="l00091"></a>00091   <span class="keywordtype">void</span> <a class="code" href="class_p_v_physics.html#b33b7fee9e0d4eada11603880f2d4a40" title="handles collision between balls.">handleCollisionWithBall</a>(<a class="code" href="class_p_v_node.html">PVNode</a> *ball1, <a class="code" href="class_p_v_node.html">PVNode</a> *ball2);
+<a name="l00092"></a>00092     
+<a name="l00093"></a>00093  <span class="keyword">private</span>:
+<a name="l00094"></a>00094   
+<a name="l00095"></a>00095  };
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="preprocessor">#endif // _PVPHYSICS_H_</span>
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jul 26 18:16:20 2009 for BallGame by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Mon Jul 27 19:56:54 2009 for BallGame by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
 </body>
